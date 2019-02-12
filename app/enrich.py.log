@@ -1,0 +1,1254 @@
+2019-02-12 01:09:40,078 - .\enrich.py - INFO - Starting
+2019-02-12 01:09:40,078 - .\enrich.py - INFO - Loaded 500 symbols
+2019-02-12 01:09:40,189 - .\enrich.py - ERROR - Error processing MMM in ../data/MMM_price_data.csv.
+2019-02-12 01:09:40,189 - .\enrich.py - ERROR - int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File ".\enrich.py", line 150, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2019-02-12 01:09:40,299 - .\enrich.py - ERROR - Error processing AOS in ../data/AOS_price_data.csv.
+2019-02-12 01:09:40,299 - .\enrich.py - ERROR - int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File ".\enrich.py", line 150, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2019-02-12 01:09:40,408 - .\enrich.py - ERROR - Error processing ABT in ../data/ABT_price_data.csv.
+2019-02-12 01:09:40,408 - .\enrich.py - ERROR - int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File ".\enrich.py", line 150, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2019-02-12 01:09:40,518 - .\enrich.py - ERROR - Error processing ABBV in ../data/ABBV_price_data.csv.
+2019-02-12 01:09:40,518 - .\enrich.py - ERROR - int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File ".\enrich.py", line 150, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2019-02-12 01:09:40,624 - .\enrich.py - ERROR - Error processing ACN in ../data/ACN_price_data.csv.
+2019-02-12 01:09:40,624 - .\enrich.py - ERROR - int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File ".\enrich.py", line 150, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2019-02-12 01:09:40,731 - .\enrich.py - ERROR - Error processing ATVI in ../data/ATVI_price_data.csv.
+2019-02-12 01:09:40,731 - .\enrich.py - ERROR - int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File ".\enrich.py", line 150, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2019-02-12 01:09:40,867 - .\enrich.py - ERROR - Error processing AYI in ../data/AYI_price_data.csv.
+2019-02-12 01:09:40,867 - .\enrich.py - ERROR - int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File ".\enrich.py", line 150, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2019-02-12 01:09:40,977 - .\enrich.py - ERROR - Error processing ADBE in ../data/ADBE_price_data.csv.
+2019-02-12 01:09:40,978 - .\enrich.py - ERROR - int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File ".\enrich.py", line 150, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2019-02-12 01:09:41,080 - .\enrich.py - ERROR - Error processing AAP in ../data/AAP_price_data.csv.
+2019-02-12 01:09:41,080 - .\enrich.py - ERROR - int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File ".\enrich.py", line 150, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2019-02-12 01:09:41,174 - .\enrich.py - ERROR - Error processing AMD in ../data/AMD_price_data.csv.
+2019-02-12 01:09:41,174 - .\enrich.py - ERROR - int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File ".\enrich.py", line 150, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2019-02-12 01:09:41,297 - .\enrich.py - ERROR - Error processing AES in ../data/AES_price_data.csv.
+2019-02-12 01:09:41,297 - .\enrich.py - ERROR - int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File ".\enrich.py", line 150, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2019-02-12 01:09:41,428 - .\enrich.py - ERROR - Error processing AET in ../data/AET_price_data.csv.
+2019-02-12 01:09:41,429 - .\enrich.py - ERROR - int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File ".\enrich.py", line 150, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2019-02-12 01:09:41,568 - .\enrich.py - ERROR - Error processing AMG in ../data/AMG_price_data.csv.
+2019-02-12 01:09:41,568 - .\enrich.py - ERROR - int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File ".\enrich.py", line 150, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2019-02-12 01:09:41,690 - .\enrich.py - ERROR - Error processing AFL in ../data/AFL_price_data.csv.
+2019-02-12 01:09:41,690 - .\enrich.py - ERROR - int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File ".\enrich.py", line 150, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2019-02-12 01:09:41,809 - .\enrich.py - ERROR - Error processing A in ../data/A_price_data.csv.
+2019-02-12 01:09:41,809 - .\enrich.py - ERROR - int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File ".\enrich.py", line 150, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2019-02-12 01:09:41,933 - .\enrich.py - ERROR - Error processing APD in ../data/APD_price_data.csv.
+2019-02-12 01:09:41,934 - .\enrich.py - ERROR - int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File ".\enrich.py", line 150, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2019-02-12 01:09:42,055 - .\enrich.py - ERROR - Error processing AKAM in ../data/AKAM_price_data.csv.
+2019-02-12 01:09:42,055 - .\enrich.py - ERROR - int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File ".\enrich.py", line 150, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2019-02-12 01:09:42,171 - .\enrich.py - ERROR - Error processing ALK in ../data/ALK_price_data.csv.
+2019-02-12 01:09:42,171 - .\enrich.py - ERROR - int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File ".\enrich.py", line 150, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2019-02-12 01:09:42,265 - .\enrich.py - ERROR - Error processing ALB in ../data/ALB_price_data.csv.
+2019-02-12 01:09:42,265 - .\enrich.py - ERROR - int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File ".\enrich.py", line 150, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2019-02-12 01:09:42,375 - .\enrich.py - ERROR - Error processing ARE in ../data/ARE_price_data.csv.
+2019-02-12 01:09:42,375 - .\enrich.py - ERROR - int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File ".\enrich.py", line 150, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2019-02-12 01:09:42,484 - .\enrich.py - ERROR - Error processing ALXN in ../data/ALXN_price_data.csv.
+2019-02-12 01:09:42,484 - .\enrich.py - ERROR - int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File ".\enrich.py", line 150, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2019-02-12 01:09:42,593 - .\enrich.py - ERROR - Error processing ALGN in ../data/ALGN_price_data.csv.
+2019-02-12 01:09:42,593 - .\enrich.py - ERROR - int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File ".\enrich.py", line 150, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2019-02-12 01:11:12,581 - .\enrich.py - INFO - Starting
+2019-02-12 01:11:12,581 - .\enrich.py - INFO - Loaded 500 symbols
+2019-02-12 01:11:12,690 - .\enrich.py - DEBUG - None
+2019-02-12 01:11:12,690 - .\enrich.py - ERROR - Error processing MMM in ../data/MMM_price_data.csv.
+2019-02-12 01:11:12,690 - .\enrich.py - ERROR - int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+Traceback (most recent call last):
+  File ".\enrich.py", line 151, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2019-02-12 01:15:20,564 - .\enrich.py - INFO - Starting
+2019-02-12 01:15:20,580 - .\enrich.py - INFO - Loaded 500 symbols
+2019-02-12 01:15:20,673 - .\enrich.py - ERROR - Error processing MMM in ../data/MMM_price_data.csv.
+2019-02-12 01:15:20,689 - .\enrich.py - ERROR - invalid literal for int() with base 10: 'timestamp1'
+Traceback (most recent call last):
+  File ".\enrich.py", line 151, in <module>
+    chart_df = new_df.take(chart_cols, axis=1)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2891, in take
+    return self._take(indices, axis=axis, is_copy=is_copy)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\generic.py", line 2789, in _take
+    verify=True)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\internals.py", line 4526, in take
+    else np.asanyarray(indexer, dtype='int64'))
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\numpy\core\numeric.py", line 553, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+ValueError: invalid literal for int() with base 10: 'timestamp1'
+2019-02-12 01:17:26,231 - .\enrich.py - INFO - Starting
+2019-02-12 01:17:26,231 - .\enrich.py - INFO - Loaded 500 symbols
+2019-02-12 01:17:26,387 - .\enrich.py - INFO - Finished MMM
+2019-02-12 01:17:26,531 - .\enrich.py - INFO - Finished AOS
+2019-02-12 01:17:26,691 - .\enrich.py - INFO - Finished ABT
+2019-02-12 01:17:26,851 - .\enrich.py - INFO - Finished ABBV
+2019-02-12 01:17:27,016 - .\enrich.py - INFO - Finished ACN
+2019-02-12 01:17:27,216 - .\enrich.py - INFO - Finished ATVI
+2019-02-12 01:17:27,359 - .\enrich.py - INFO - Finished AYI
+2019-02-12 01:17:27,503 - .\enrich.py - INFO - Finished ADBE
+2019-02-12 01:17:27,677 - .\enrich.py - INFO - Finished AAP
+2019-02-12 01:17:27,851 - .\enrich.py - INFO - Finished AMD
+2019-02-12 01:17:28,037 - .\enrich.py - INFO - Finished AES
+2019-02-12 01:17:28,193 - .\enrich.py - INFO - Finished AET
+2019-02-12 01:17:28,352 - .\enrich.py - INFO - Finished AMG
+2019-02-12 01:17:28,489 - .\enrich.py - INFO - Finished AFL
+2019-02-12 01:17:28,657 - .\enrich.py - INFO - Finished A
+2019-02-12 01:17:28,841 - .\enrich.py - INFO - Finished APD
+2019-02-12 01:17:28,994 - .\enrich.py - INFO - Finished AKAM
+2019-02-12 01:17:29,152 - .\enrich.py - INFO - Finished ALK
+2019-02-12 01:17:29,361 - .\enrich.py - INFO - Finished ALB
+2019-02-12 01:17:29,517 - .\enrich.py - INFO - Finished ARE
+2019-02-12 01:17:29,704 - .\enrich.py - INFO - Finished ALXN
+2019-02-12 01:17:29,873 - .\enrich.py - INFO - Finished ALGN
+2019-02-12 01:17:30,017 - .\enrich.py - INFO - Finished ALLE
+2019-02-12 01:17:30,174 - .\enrich.py - INFO - Finished AGN
+2019-02-12 01:17:30,346 - .\enrich.py - INFO - Finished ADS
+2019-02-12 01:17:30,548 - .\enrich.py - INFO - Finished LNT
+2019-02-12 01:17:30,697 - .\enrich.py - INFO - Finished ALL
+2019-02-12 01:17:30,859 - .\enrich.py - INFO - Finished GOOGL
+2019-02-12 01:17:31,008 - .\enrich.py - INFO - Finished GOOG
+2019-02-12 01:17:31,166 - .\enrich.py - INFO - Finished MO
+2019-02-12 01:17:31,419 - .\enrich.py - INFO - Finished AMZN
+2019-02-12 01:17:31,560 - .\enrich.py - INFO - Finished AEE
+2019-02-12 01:17:31,735 - .\enrich.py - INFO - Finished AAL
+2019-02-12 01:17:31,897 - .\enrich.py - INFO - Finished AEP
+2019-02-12 01:17:32,056 - .\enrich.py - INFO - Finished AXP
+2019-02-12 01:17:32,268 - .\enrich.py - INFO - Finished AIG
+2019-02-12 01:17:32,427 - .\enrich.py - INFO - Finished AMT
+2019-02-12 01:17:32,577 - .\enrich.py - INFO - Finished AWK
+2019-02-12 01:17:32,730 - .\enrich.py - INFO - Finished AMP
+2019-02-12 01:17:32,908 - .\enrich.py - INFO - Finished ABC
+2019-02-12 01:17:33,089 - .\enrich.py - INFO - Finished AME
+2019-02-12 01:17:33,228 - .\enrich.py - INFO - Finished AMGN
+2019-02-12 01:17:33,392 - .\enrich.py - INFO - Finished APH
+2019-02-12 01:17:33,560 - .\enrich.py - INFO - Finished APC
+2019-02-12 01:17:33,717 - .\enrich.py - INFO - Finished ADI
+2019-02-12 01:17:33,898 - .\enrich.py - INFO - Finished ANDV
+2019-02-12 01:17:34,041 - .\enrich.py - INFO - Finished ANSS
+2019-02-12 01:17:34,195 - .\enrich.py - INFO - Finished ANTM
+2019-02-12 01:17:34,388 - .\enrich.py - INFO - Finished AON
+2019-02-12 01:17:34,561 - .\enrich.py - INFO - Finished APA
+2019-02-12 01:17:34,746 - .\enrich.py - INFO - Finished AIV
+2019-02-12 01:17:34,921 - .\enrich.py - INFO - Finished AAPL
+2019-02-12 01:17:35,081 - .\enrich.py - INFO - Finished AMAT
+2019-02-12 01:17:35,236 - .\enrich.py - INFO - Finished APTV
+2019-02-12 01:17:35,395 - .\enrich.py - INFO - Finished ADM
+2019-02-12 01:17:35,595 - .\enrich.py - INFO - Finished ARNC
+2019-02-12 01:17:35,745 - .\enrich.py - INFO - Finished AJG
+2019-02-12 01:17:35,889 - .\enrich.py - INFO - Finished AIZ
+2019-02-12 01:17:36,056 - .\enrich.py - INFO - Finished T
+2019-02-12 01:17:36,212 - .\enrich.py - INFO - Finished ADSK
+2019-02-12 01:17:36,452 - .\enrich.py - INFO - Finished ADP
+2019-02-12 01:17:36,601 - .\enrich.py - INFO - Finished AZO
+2019-02-12 01:17:36,761 - .\enrich.py - INFO - Finished AVB
+2019-02-12 01:17:36,986 - .\enrich.py - INFO - Finished AVY
+2019-02-12 01:17:37,172 - .\enrich.py - INFO - Finished BHGE
+2019-02-12 01:17:37,339 - .\enrich.py - INFO - Finished BLL
+2019-02-12 01:17:37,513 - .\enrich.py - INFO - Finished BAC
+2019-02-12 01:17:37,665 - .\enrich.py - INFO - Finished BAX
+2019-02-12 01:17:37,845 - .\enrich.py - INFO - Finished BBT
+2019-02-12 01:17:38,130 - .\enrich.py - INFO - Finished BDX
+2019-02-12 01:17:38,279 - .\enrich.py - INFO - Finished BRK.B
+2019-02-12 01:17:38,422 - .\enrich.py - INFO - Finished BBY
+2019-02-12 01:17:38,619 - .\enrich.py - INFO - Finished BIIB
+2019-02-12 01:17:38,779 - .\enrich.py - INFO - Finished BLK
+2019-02-12 01:17:38,960 - .\enrich.py - INFO - Finished HRB
+2019-02-12 01:17:39,097 - .\enrich.py - INFO - Finished BA
+2019-02-12 01:17:39,247 - .\enrich.py - INFO - Finished BKNG
+2019-02-12 01:17:39,391 - .\enrich.py - INFO - Finished BWA
+2019-02-12 01:17:39,568 - .\enrich.py - INFO - Finished BXP
+2019-02-12 01:17:39,774 - .\enrich.py - INFO - Finished BSX
+2019-02-12 01:17:39,911 - .\enrich.py - INFO - Finished BHF
+2019-02-12 01:17:40,057 - .\enrich.py - INFO - Finished BMY
+2019-02-12 01:17:40,226 - .\enrich.py - INFO - Finished AVGO
+2019-02-12 01:17:40,226 - .\enrich.py - ERROR - Error processing BF.B in ../data/BF.B_price_data.csv.
+2019-02-12 01:17:40,226 - .\enrich.py - ERROR - 'timestamp' is not in list
+Traceback (most recent call last):
+  File ".\enrich.py", line 50, in <module>
+    df = pd.read_csv(in_file, parse_dates=["timestamp"])
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\io\parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\io\parsers.py", line 440, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\io\parsers.py", line 787, in __init__
+    self._make_engine(self.engine)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\io\parsers.py", line 1014, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\io\parsers.py", line 1758, in __init__
+    self._set_noconvert_columns()
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\io\parsers.py", line 1826, in _set_noconvert_columns
+    _set(val)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\io\parsers.py", line 1816, in _set
+    x = names.index(x)
+ValueError: 'timestamp' is not in list
+2019-02-12 01:17:59,491 - .\enrich.py - INFO - Starting
+2019-02-12 01:17:59,506 - .\enrich.py - INFO - Loaded 500 symbols
+2019-02-12 01:17:59,663 - .\enrich.py - INFO - Finished MMM
+2019-02-12 01:17:59,821 - .\enrich.py - INFO - Finished AOS
+2019-02-12 01:17:59,961 - .\enrich.py - INFO - Finished ABT
+2019-02-12 01:18:00,136 - .\enrich.py - INFO - Finished ABBV
+2019-02-12 01:18:00,315 - .\enrich.py - INFO - Finished ACN
+2019-02-12 01:18:00,516 - .\enrich.py - INFO - Finished ATVI
+2019-02-12 01:18:00,683 - .\enrich.py - INFO - Finished AYI
+2019-02-12 01:18:00,841 - .\enrich.py - INFO - Finished ADBE
+2019-02-12 01:18:01,001 - .\enrich.py - INFO - Finished AAP
+2019-02-12 01:18:01,181 - .\enrich.py - INFO - Finished AMD
+2019-02-12 01:18:01,387 - .\enrich.py - INFO - Finished AES
+2019-02-12 01:18:01,543 - .\enrich.py - INFO - Finished AET
+2019-02-12 01:18:01,698 - .\enrich.py - INFO - Finished AMG
+2019-02-12 01:18:01,858 - .\enrich.py - INFO - Finished AFL
+2019-02-12 01:18:02,009 - .\enrich.py - INFO - Finished A
+2019-02-12 01:18:02,163 - .\enrich.py - INFO - Finished APD
+2019-02-12 01:18:02,306 - .\enrich.py - INFO - Finished AKAM
+2019-02-12 01:18:02,450 - .\enrich.py - INFO - Finished ALK
+2019-02-12 01:18:02,609 - .\enrich.py - INFO - Finished ALB
+2019-02-12 01:18:02,753 - .\enrich.py - INFO - Finished ARE
+2019-02-12 01:18:02,919 - .\enrich.py - INFO - Finished ALXN
+2019-02-12 01:18:03,058 - .\enrich.py - INFO - Finished ALGN
+2019-02-12 01:18:03,218 - .\enrich.py - INFO - Finished ALLE
+2019-02-12 01:18:03,375 - .\enrich.py - INFO - Finished AGN
+2019-02-12 01:18:03,529 - .\enrich.py - INFO - Finished ADS
+2019-02-12 01:18:03,733 - .\enrich.py - INFO - Finished LNT
+2019-02-12 01:18:03,892 - .\enrich.py - INFO - Finished ALL
+2019-02-12 01:18:04,070 - .\enrich.py - INFO - Finished GOOGL
+2019-02-12 01:18:04,232 - .\enrich.py - INFO - Finished GOOG
+2019-02-12 01:18:04,376 - .\enrich.py - INFO - Finished MO
+2019-02-12 01:18:04,517 - .\enrich.py - INFO - Finished AMZN
+2019-02-12 01:18:04,676 - .\enrich.py - INFO - Finished AEE
+2019-02-12 01:18:04,819 - .\enrich.py - INFO - Finished AAL
+2019-02-12 01:18:04,984 - .\enrich.py - INFO - Finished AEP
+2019-02-12 01:18:05,130 - .\enrich.py - INFO - Finished AXP
+2019-02-12 01:18:05,273 - .\enrich.py - INFO - Finished AIG
+2019-02-12 01:18:05,433 - .\enrich.py - INFO - Finished AMT
+2019-02-12 01:18:05,576 - .\enrich.py - INFO - Finished AWK
+2019-02-12 01:18:05,729 - .\enrich.py - INFO - Finished AMP
+2019-02-12 01:18:05,874 - .\enrich.py - INFO - Finished ABC
+2019-02-12 01:18:06,033 - .\enrich.py - INFO - Finished AME
+2019-02-12 01:18:06,187 - .\enrich.py - INFO - Finished AMGN
+2019-02-12 01:18:06,331 - .\enrich.py - INFO - Finished APH
+2019-02-12 01:18:06,474 - .\enrich.py - INFO - Finished APC
+2019-02-12 01:18:06,632 - .\enrich.py - INFO - Finished ADI
+2019-02-12 01:18:06,776 - .\enrich.py - INFO - Finished ANDV
+2019-02-12 01:18:06,920 - .\enrich.py - INFO - Finished ANSS
+2019-02-12 01:18:07,079 - .\enrich.py - INFO - Finished ANTM
+2019-02-12 01:18:07,223 - .\enrich.py - INFO - Finished AON
+2019-02-12 01:18:07,375 - .\enrich.py - INFO - Finished APA
+2019-02-12 01:18:07,529 - .\enrich.py - INFO - Finished AIV
+2019-02-12 01:18:07,672 - .\enrich.py - INFO - Finished AAPL
+2019-02-12 01:18:07,848 - .\enrich.py - INFO - Finished AMAT
+2019-02-12 01:18:08,001 - .\enrich.py - INFO - Finished APTV
+2019-02-12 01:18:08,145 - .\enrich.py - INFO - Finished ADM
+2019-02-12 01:18:08,299 - .\enrich.py - INFO - Finished ARNC
+2019-02-12 01:18:08,458 - .\enrich.py - INFO - Finished AJG
+2019-02-12 01:18:08,618 - .\enrich.py - INFO - Finished AIZ
+2019-02-12 01:18:08,771 - .\enrich.py - INFO - Finished T
+2019-02-12 01:18:08,926 - .\enrich.py - INFO - Finished ADSK
+2019-02-12 01:18:09,069 - .\enrich.py - INFO - Finished ADP
+2019-02-12 01:18:09,214 - .\enrich.py - INFO - Finished AZO
+2019-02-12 01:18:09,360 - .\enrich.py - INFO - Finished AVB
+2019-02-12 01:18:09,550 - .\enrich.py - INFO - Finished AVY
+2019-02-12 01:18:09,713 - .\enrich.py - INFO - Finished BHGE
+2019-02-12 01:18:09,872 - .\enrich.py - INFO - Finished BLL
+2019-02-12 01:18:10,017 - .\enrich.py - INFO - Finished BAC
+2019-02-12 01:18:10,161 - .\enrich.py - INFO - Finished BAX
+2019-02-12 01:18:10,330 - .\enrich.py - INFO - Finished BBT
+2019-02-12 01:18:10,477 - .\enrich.py - INFO - Finished BDX
+2019-02-12 01:18:10,644 - .\enrich.py - INFO - Finished BRK.B
+2019-02-12 01:18:10,803 - .\enrich.py - INFO - Finished BBY
+2019-02-12 01:18:10,960 - .\enrich.py - INFO - Finished BIIB
+2019-02-12 01:18:11,127 - .\enrich.py - INFO - Finished BLK
+2019-02-12 01:18:11,271 - .\enrich.py - INFO - Finished HRB
+2019-02-12 01:18:11,414 - .\enrich.py - INFO - Finished BA
+2019-02-12 01:18:11,572 - .\enrich.py - INFO - Finished BKNG
+2019-02-12 01:18:11,730 - .\enrich.py - INFO - Finished BWA
+2019-02-12 01:18:11,874 - .\enrich.py - INFO - Finished BXP
+2019-02-12 01:18:12,016 - .\enrich.py - INFO - Finished BSX
+2019-02-12 01:18:12,176 - .\enrich.py - INFO - Finished BHF
+2019-02-12 01:18:12,320 - .\enrich.py - INFO - Finished BMY
+2019-02-12 01:18:12,486 - .\enrich.py - INFO - Finished AVGO
+2019-02-12 01:18:12,501 - .\enrich.py - ERROR - Error processing BF.B in ../data/BF.B_price_data.csv.
+2019-02-12 01:18:12,501 - .\enrich.py - ERROR - 'timestamp' is not in list
+Traceback (most recent call last):
+  File ".\enrich.py", line 50, in <module>
+    df = pd.read_csv(in_file, parse_dates=["timestamp"])
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\io\parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\io\parsers.py", line 440, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\io\parsers.py", line 787, in __init__
+    self._make_engine(self.engine)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\io\parsers.py", line 1014, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\io\parsers.py", line 1758, in __init__
+    self._set_noconvert_columns()
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\io\parsers.py", line 1826, in _set_noconvert_columns
+    _set(val)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\io\parsers.py", line 1816, in _set
+    x = names.index(x)
+ValueError: 'timestamp' is not in list
+2019-02-12 01:18:12,658 - .\enrich.py - INFO - Finished CHRW
+2019-02-12 01:18:12,802 - .\enrich.py - INFO - Finished CA
+2019-02-12 01:18:12,960 - .\enrich.py - INFO - Finished COG
+2019-02-12 01:18:13,131 - .\enrich.py - INFO - Finished CDNS
+2019-02-12 01:18:13,317 - .\enrich.py - INFO - Finished CPB
+2019-02-12 01:18:13,554 - .\enrich.py - INFO - Finished COF
+2019-02-12 01:18:13,774 - .\enrich.py - INFO - Finished CAH
+2019-02-12 01:18:13,914 - .\enrich.py - INFO - Finished KMX
+2019-02-12 01:18:14,057 - .\enrich.py - INFO - Finished CCL
+2019-02-12 01:18:14,228 - .\enrich.py - INFO - Finished CAT
+2019-02-12 01:18:14,424 - .\enrich.py - INFO - Finished CBOE
+2019-02-12 01:18:14,575 - .\enrich.py - INFO - Finished CBRE
+2019-02-12 01:18:14,729 - .\enrich.py - INFO - Finished CBS
+2019-02-12 01:18:14,871 - .\enrich.py - INFO - Finished CELG
+2019-02-12 01:18:15,029 - .\enrich.py - INFO - Finished CNC
+2019-02-12 01:18:15,322 - .\enrich.py - INFO - Finished CNP
+2019-02-12 01:18:15,490 - .\enrich.py - INFO - Finished CTL
+2019-02-12 01:18:15,634 - .\enrich.py - INFO - Finished CERN
+2019-02-12 01:18:15,803 - .\enrich.py - INFO - Finished CF
+2019-02-12 01:18:15,957 - .\enrich.py - INFO - Finished SCHW
+2019-02-12 01:18:16,137 - .\enrich.py - INFO - Finished CHTR
+2019-02-12 01:18:16,344 - .\enrich.py - INFO - Finished CVX
+2019-02-12 01:18:16,503 - .\enrich.py - INFO - Finished CMG
+2019-02-12 01:18:16,668 - .\enrich.py - INFO - Finished CB
+2019-02-12 01:18:16,860 - .\enrich.py - INFO - Finished CHD
+2019-02-12 01:18:17,020 - .\enrich.py - INFO - Finished CI
+2019-02-12 01:18:17,160 - .\enrich.py - INFO - Finished XEC
+2019-02-12 01:18:17,320 - .\enrich.py - INFO - Finished CINF
+2019-02-12 01:18:17,484 - .\enrich.py - INFO - Finished CTAS
+2019-02-12 01:18:17,642 - .\enrich.py - INFO - Finished CSCO
+2019-02-12 01:18:17,825 - .\enrich.py - INFO - Finished C
+2019-02-12 01:18:17,976 - .\enrich.py - INFO - Finished CFG
+2019-02-12 01:18:18,119 - .\enrich.py - INFO - Finished CTXS
+2019-02-12 01:18:18,325 - .\enrich.py - INFO - Finished CME
+2019-02-12 01:18:18,482 - .\enrich.py - INFO - Finished CMS
+2019-02-12 01:18:18,669 - .\enrich.py - INFO - Finished KO
+2019-02-12 01:18:18,814 - .\enrich.py - INFO - Finished CTSH
+2019-02-12 01:18:18,960 - .\enrich.py - INFO - Finished CL
+2019-02-12 01:18:19,121 - .\enrich.py - INFO - Finished CMCSA
+2019-02-12 01:18:19,336 - .\enrich.py - INFO - Finished CMA
+2019-02-12 01:18:19,517 - .\enrich.py - INFO - Finished CAG
+2019-02-12 01:18:19,725 - .\enrich.py - INFO - Finished CXO
+2019-02-12 01:18:19,877 - .\enrich.py - INFO - Finished COP
+2019-02-12 01:18:20,037 - .\enrich.py - INFO - Finished ED
+2019-02-12 01:18:20,200 - .\enrich.py - INFO - Finished STZ
+2019-02-12 01:18:20,384 - .\enrich.py - INFO - Finished GLW
+2019-02-12 01:18:20,521 - .\enrich.py - INFO - Finished COST
+2019-02-12 01:18:20,665 - .\enrich.py - INFO - Finished COTY
+2019-02-12 01:18:20,826 - .\enrich.py - INFO - Finished CCI
+2019-02-12 01:18:20,980 - .\enrich.py - INFO - Finished CSRA
+2019-02-12 01:18:21,218 - .\enrich.py - INFO - Finished CSX
+2019-02-12 01:18:21,407 - .\enrich.py - INFO - Finished CMI
+2019-02-12 01:18:21,561 - .\enrich.py - INFO - Finished CVS
+2019-02-12 01:18:21,777 - .\enrich.py - INFO - Finished DHI
+2019-02-12 01:18:21,999 - .\enrich.py - INFO - Finished DHR
+2019-02-12 01:18:22,154 - .\enrich.py - INFO - Finished DRI
+2019-02-12 01:18:22,345 - .\enrich.py - INFO - Finished DVA
+2019-02-12 01:18:22,504 - .\enrich.py - INFO - Finished DE
+2019-02-12 01:18:22,671 - .\enrich.py - INFO - Finished DAL
+2019-02-12 01:18:22,934 - .\enrich.py - INFO - Finished XRAY
+2019-02-12 01:18:23,080 - .\enrich.py - INFO - Finished DVN
+2019-02-12 01:18:23,239 - .\enrich.py - INFO - Finished DLR
+2019-02-12 01:18:23,431 - .\enrich.py - INFO - Finished DFS
+2019-02-12 01:18:23,586 - .\enrich.py - INFO - Finished DISCA
+2019-02-12 01:18:23,769 - .\enrich.py - INFO - Finished DISCK
+2019-02-12 01:18:23,916 - .\enrich.py - INFO - Finished DISH
+2019-02-12 01:18:24,058 - .\enrich.py - INFO - Finished DG
+2019-02-12 01:18:24,218 - .\enrich.py - INFO - Finished DLTR
+2019-02-12 01:18:24,387 - .\enrich.py - INFO - Finished D
+2019-02-12 01:18:24,591 - .\enrich.py - INFO - Finished DOV
+2019-02-12 01:18:24,745 - .\enrich.py - INFO - Finished DWDP
+2019-02-12 01:18:24,901 - .\enrich.py - INFO - Finished DPS
+2019-02-12 01:18:25,180 - .\enrich.py - INFO - Finished DTE
+2019-02-12 01:18:25,393 - .\enrich.py - INFO - Finished DUK
+2019-02-12 01:18:25,782 - .\enrich.py - INFO - Finished DRE
+2019-02-12 01:18:26,025 - .\enrich.py - INFO - Finished DXC
+2019-02-12 01:18:26,461 - .\enrich.py - INFO - Finished ETFC
+2019-02-12 01:18:26,621 - .\enrich.py - INFO - Finished EMN
+2019-02-12 01:18:26,850 - .\enrich.py - INFO - Finished ETN
+2019-02-12 01:18:27,087 - .\enrich.py - INFO - Finished EBAY
+2019-02-12 01:18:27,336 - .\enrich.py - INFO - Finished ECL
+2019-02-12 01:18:27,474 - .\enrich.py - INFO - Finished EIX
+2019-02-12 01:18:27,633 - .\enrich.py - INFO - Finished EW
+2019-02-12 01:18:27,823 - .\enrich.py - INFO - Finished EA
+2019-02-12 01:18:27,988 - .\enrich.py - INFO - Finished EMR
+2019-02-12 01:18:28,173 - .\enrich.py - INFO - Finished ETR
+2019-02-12 01:18:28,305 - .\enrich.py - INFO - Finished EVHC
+2019-02-12 01:18:28,507 - .\enrich.py - INFO - Finished EOG
+2019-02-12 01:18:28,676 - .\enrich.py - INFO - Finished EQT
+2019-02-12 01:18:28,828 - .\enrich.py - INFO - Finished EFX
+2019-02-12 01:18:29,068 - .\enrich.py - INFO - Finished EQIX
+2019-02-12 01:18:29,213 - .\enrich.py - INFO - Finished EQR
+2019-02-12 01:18:29,355 - .\enrich.py - INFO - Finished ESS
+2019-02-12 01:18:29,509 - .\enrich.py - INFO - Finished EL
+2019-02-12 01:18:29,675 - .\enrich.py - INFO - Finished RE
+2019-02-12 01:18:29,856 - .\enrich.py - INFO - Finished ES
+2019-02-12 01:18:30,001 - .\enrich.py - INFO - Finished EXC
+2019-02-12 01:18:30,160 - .\enrich.py - INFO - Finished EXPE
+2019-02-12 01:18:30,299 - .\enrich.py - INFO - Finished EXPD
+2019-02-12 01:18:30,511 - .\enrich.py - INFO - Finished ESRX
+2019-02-12 01:18:30,715 - .\enrich.py - INFO - Finished EXR
+2019-02-12 01:18:30,867 - .\enrich.py - INFO - Finished XOM
+2019-02-12 01:18:31,041 - .\enrich.py - INFO - Finished FFIV
+2019-02-12 01:18:31,202 - .\enrich.py - INFO - Finished FB
+2019-02-12 01:18:31,355 - .\enrich.py - INFO - Finished FAST
+2019-02-12 01:18:31,621 - .\enrich.py - INFO - Finished FRT
+2019-02-12 01:18:31,764 - .\enrich.py - INFO - Finished FDX
+2019-02-12 01:18:31,912 - .\enrich.py - INFO - Finished FIS
+2019-02-12 01:18:32,156 - .\enrich.py - INFO - Finished FITB
+2019-02-12 01:18:32,329 - .\enrich.py - INFO - Finished FE
+2019-02-12 01:18:32,494 - .\enrich.py - INFO - Finished FISV
+2019-02-12 01:18:32,659 - .\enrich.py - INFO - Finished FLIR
+2019-02-12 01:18:32,807 - .\enrich.py - INFO - Finished FLS
+2019-02-12 01:18:32,970 - .\enrich.py - INFO - Finished FLR
+2019-02-12 01:18:33,124 - .\enrich.py - INFO - Finished FMC
+2019-02-12 01:18:33,306 - .\enrich.py - INFO - Finished FL
+2019-02-12 01:18:33,459 - .\enrich.py - INFO - Finished F
+2019-02-12 01:18:33,601 - .\enrich.py - INFO - Finished FTV
+2019-02-12 01:18:33,745 - .\enrich.py - INFO - Finished FBHS
+2019-02-12 01:18:33,949 - .\enrich.py - INFO - Finished BEN
+2019-02-12 01:18:34,131 - .\enrich.py - INFO - Finished FCX
+2019-02-12 01:18:34,276 - .\enrich.py - INFO - Finished GPS
+2019-02-12 01:18:34,451 - .\enrich.py - INFO - Finished GRMN
+2019-02-12 01:18:34,636 - .\enrich.py - INFO - Finished IT
+2019-02-12 01:18:34,793 - .\enrich.py - INFO - Finished GD
+2019-02-12 01:18:35,023 - .\enrich.py - INFO - Finished GE
+2019-02-12 01:18:35,160 - .\enrich.py - INFO - Finished GGP
+2019-02-12 01:18:35,319 - .\enrich.py - INFO - Finished GIS
+2019-02-12 01:18:35,504 - .\enrich.py - INFO - Finished GM
+2019-02-12 01:18:35,672 - .\enrich.py - INFO - Finished GPC
+2019-02-12 01:18:35,857 - .\enrich.py - INFO - Finished GILD
+2019-02-12 01:18:36,012 - .\enrich.py - INFO - Finished GPN
+2019-02-12 01:18:36,160 - .\enrich.py - INFO - Finished GS
+2019-02-12 01:18:36,332 - .\enrich.py - INFO - Finished GT
+2019-02-12 01:18:36,489 - .\enrich.py - INFO - Finished GWW
+2019-02-12 01:18:36,679 - .\enrich.py - INFO - Finished HAL
+2019-02-12 01:18:36,821 - .\enrich.py - INFO - Finished HBI
+2019-02-12 01:18:36,967 - .\enrich.py - INFO - Finished HOG
+2019-02-12 01:18:37,164 - .\enrich.py - INFO - Finished HRS
+2019-02-12 01:18:37,341 - .\enrich.py - INFO - Finished HIG
+2019-02-12 01:18:37,531 - .\enrich.py - INFO - Finished HAS
+2019-02-12 01:18:37,716 - .\enrich.py - INFO - Finished HCA
+2019-02-12 01:18:37,854 - .\enrich.py - INFO - Finished HCP
+2019-02-12 01:18:38,018 - .\enrich.py - INFO - Finished HP
+2019-02-12 01:18:38,273 - .\enrich.py - INFO - Finished HSIC
+2019-02-12 01:18:38,435 - .\enrich.py - INFO - Finished HES
+2019-02-12 01:18:38,593 - .\enrich.py - INFO - Finished HPE
+2019-02-12 01:18:38,781 - .\enrich.py - INFO - Finished HLT
+2019-02-12 01:18:38,941 - .\enrich.py - INFO - Finished HOLX
+2019-02-12 01:18:39,097 - .\enrich.py - INFO - Finished HD
+2019-02-12 01:18:39,301 - .\enrich.py - INFO - Finished HON
+2019-02-12 01:18:39,461 - .\enrich.py - INFO - Finished HRL
+2019-02-12 01:18:39,610 - .\enrich.py - INFO - Finished HST
+2019-02-12 01:18:39,775 - .\enrich.py - INFO - Finished HPQ
+2019-02-12 01:18:39,927 - .\enrich.py - INFO - Finished HUM
+2019-02-12 01:18:40,116 - .\enrich.py - INFO - Finished HBAN
+2019-02-12 01:18:40,314 - .\enrich.py - INFO - Finished HII
+2019-02-12 01:18:40,465 - .\enrich.py - INFO - Finished IDXX
+2019-02-12 01:18:40,641 - .\enrich.py - INFO - Finished INFO
+2019-02-12 01:18:40,858 - .\enrich.py - INFO - Finished ITW
+2019-02-12 01:18:41,026 - .\enrich.py - INFO - Finished ILMN
+2019-02-12 01:18:41,204 - .\enrich.py - INFO - Finished INCY
+2019-02-12 01:18:41,358 - .\enrich.py - INFO - Finished IR
+2019-02-12 01:18:41,588 - .\enrich.py - INFO - Finished INTC
+2019-02-12 01:18:41,822 - .\enrich.py - INFO - Finished ICE
+2019-02-12 01:18:42,007 - .\enrich.py - INFO - Finished IBM
+2019-02-12 01:18:42,166 - .\enrich.py - INFO - Finished IP
+2019-02-12 01:18:42,337 - .\enrich.py - INFO - Finished IPG
+2019-02-12 01:18:42,506 - .\enrich.py - INFO - Finished IFF
+2019-02-12 01:18:42,715 - .\enrich.py - INFO - Finished INTU
+2019-02-12 01:18:42,872 - .\enrich.py - INFO - Finished ISRG
+2019-02-12 01:18:43,056 - .\enrich.py - INFO - Finished IVZ
+2019-02-12 01:18:43,218 - .\enrich.py - INFO - Finished IPGP
+2019-02-12 01:18:43,377 - .\enrich.py - INFO - Finished IQV
+2019-02-12 01:18:43,653 - .\enrich.py - INFO - Finished IRM
+2019-02-12 01:18:43,816 - .\enrich.py - INFO - Finished JBHT
+2019-02-12 01:18:43,998 - .\enrich.py - INFO - Finished JEC
+2019-02-12 01:18:44,189 - .\enrich.py - INFO - Finished SJM
+2019-02-12 01:18:44,368 - .\enrich.py - INFO - Finished JNJ
+2019-02-12 01:18:44,610 - .\enrich.py - INFO - Finished JCI
+2019-02-12 01:18:44,779 - .\enrich.py - INFO - Finished JPM
+2019-02-12 01:18:44,949 - .\enrich.py - INFO - Finished JNPR
+2019-02-12 01:18:45,187 - .\enrich.py - INFO - Finished KSU
+2019-02-12 01:18:45,379 - .\enrich.py - INFO - Finished K
+2019-02-12 01:18:45,536 - .\enrich.py - INFO - Finished KEY
+2019-02-12 01:18:45,695 - .\enrich.py - INFO - Finished KMB
+2019-02-12 01:18:45,844 - .\enrich.py - INFO - Finished KIM
+2019-02-12 01:18:46,012 - .\enrich.py - INFO - Finished KMI
+2019-02-12 01:18:46,198 - .\enrich.py - INFO - Finished KLAC
+2019-02-12 01:18:46,347 - .\enrich.py - INFO - Finished KSS
+2019-02-12 01:18:46,538 - .\enrich.py - INFO - Finished KHC
+2019-02-12 01:18:46,715 - .\enrich.py - INFO - Finished KR
+2019-02-12 01:18:46,871 - .\enrich.py - INFO - Finished LB
+2019-02-12 01:18:47,170 - .\enrich.py - INFO - Finished LLL
+2019-02-12 01:18:47,325 - .\enrich.py - INFO - Finished LH
+2019-02-12 01:18:47,484 - .\enrich.py - INFO - Finished LRCX
+2019-02-12 01:18:47,690 - .\enrich.py - INFO - Finished LEG
+2019-02-12 01:18:47,858 - .\enrich.py - INFO - Finished LEN
+2019-02-12 01:18:48,078 - .\enrich.py - INFO - Finished LUK
+2019-02-12 01:18:48,375 - .\enrich.py - INFO - Finished LLY
+2019-02-12 01:18:48,540 - .\enrich.py - INFO - Finished LNC
+2019-02-12 01:18:48,706 - .\enrich.py - INFO - Finished LKQ
+2019-02-12 01:18:48,872 - .\enrich.py - INFO - Finished LMT
+2019-02-12 01:18:49,039 - .\enrich.py - INFO - Finished L
+2019-02-12 01:18:49,245 - .\enrich.py - INFO - Finished LOW
+2019-02-12 01:18:49,431 - .\enrich.py - INFO - Finished LYB
+2019-02-12 01:18:49,640 - .\enrich.py - INFO - Finished MTB
+2019-02-12 01:18:49,801 - .\enrich.py - INFO - Finished MAC
+2019-02-12 01:18:50,038 - .\enrich.py - INFO - Finished M
+2019-02-12 01:18:50,305 - .\enrich.py - INFO - Finished MRO
+2019-02-12 01:18:50,475 - .\enrich.py - INFO - Finished MPC
+2019-02-12 01:18:50,652 - .\enrich.py - INFO - Finished MAR
+2019-02-12 01:18:50,906 - .\enrich.py - INFO - Finished MMC
+2019-02-12 01:18:51,081 - .\enrich.py - INFO - Finished MLM
+2019-02-12 01:18:51,303 - .\enrich.py - INFO - Finished MAS
+2019-02-12 01:18:51,488 - .\enrich.py - INFO - Finished MA
+2019-02-12 01:18:51,718 - .\enrich.py - INFO - Finished MAT
+2019-02-12 01:18:51,902 - .\enrich.py - INFO - Finished MKC
+2019-02-12 01:18:52,062 - .\enrich.py - INFO - Finished MCD
+2019-02-12 01:18:52,221 - .\enrich.py - INFO - Finished MCK
+2019-02-12 01:18:52,417 - .\enrich.py - INFO - Finished MDT
+2019-02-12 01:18:52,670 - .\enrich.py - INFO - Finished MRK
+2019-02-12 01:18:52,839 - .\enrich.py - INFO - Finished MET
+2019-02-12 01:18:53,007 - .\enrich.py - INFO - Finished MTD
+2019-02-12 01:18:53,197 - .\enrich.py - INFO - Finished MGM
+2019-02-12 01:18:53,474 - .\enrich.py - INFO - Finished KORS
+2019-02-12 01:18:53,651 - .\enrich.py - INFO - Finished MCHP
+2019-02-12 01:18:53,841 - .\enrich.py - INFO - Finished MU
+2019-02-12 01:18:54,007 - .\enrich.py - INFO - Finished MSFT
+2019-02-12 01:18:54,185 - .\enrich.py - INFO - Finished MAA
+2019-02-12 01:18:54,477 - .\enrich.py - INFO - Finished MHK
+2019-02-12 01:18:54,681 - .\enrich.py - INFO - Finished TAP
+2019-02-12 01:18:54,851 - .\enrich.py - INFO - Finished MDLZ
+2019-02-12 01:18:55,061 - .\enrich.py - INFO - Finished MON
+2019-02-12 01:18:55,250 - .\enrich.py - INFO - Finished MNST
+2019-02-12 01:18:55,413 - .\enrich.py - INFO - Finished MCO
+2019-02-12 01:18:55,573 - .\enrich.py - INFO - Finished MS
+2019-02-12 01:18:55,732 - .\enrich.py - INFO - Finished MSI
+2019-02-12 01:18:55,908 - .\enrich.py - INFO - Finished MYL
+2019-02-12 01:18:56,124 - .\enrich.py - INFO - Finished NDAQ
+2019-02-12 01:18:56,282 - .\enrich.py - INFO - Finished NOV
+2019-02-12 01:18:56,529 - .\enrich.py - INFO - Finished NAVI
+2019-02-12 01:18:56,723 - .\enrich.py - INFO - Finished NKTR
+2019-02-12 01:18:56,956 - .\enrich.py - INFO - Finished NTAP
+2019-02-12 01:18:56,963 - .\enrich.py - ERROR - Error processing NFLX in ../data/NFLX_price_data.csv.
+2019-02-12 01:18:56,964 - .\enrich.py - ERROR - 'timestamp' is not in list
+Traceback (most recent call last):
+  File ".\enrich.py", line 50, in <module>
+    df = pd.read_csv(in_file, parse_dates=["timestamp"])
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\io\parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\io\parsers.py", line 440, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\io\parsers.py", line 787, in __init__
+    self._make_engine(self.engine)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\io\parsers.py", line 1014, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\io\parsers.py", line 1758, in __init__
+    self._set_noconvert_columns()
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\io\parsers.py", line 1826, in _set_noconvert_columns
+    _set(val)
+  File "C:\Users\tdale\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\io\parsers.py", line 1816, in _set
+    x = names.index(x)
+ValueError: 'timestamp' is not in list
+2019-02-12 01:18:57,169 - .\enrich.py - INFO - Finished NWL
+2019-02-12 01:18:57,327 - .\enrich.py - INFO - Finished NFX
+2019-02-12 01:18:57,550 - .\enrich.py - INFO - Finished NEM
+2019-02-12 01:18:57,778 - .\enrich.py - INFO - Finished NWSA
+2019-02-12 01:18:57,948 - .\enrich.py - INFO - Finished NWS
+2019-02-12 01:18:58,131 - .\enrich.py - INFO - Finished NEE
+2019-02-12 01:18:58,285 - .\enrich.py - INFO - Finished NLSN
+2019-02-12 01:18:58,444 - .\enrich.py - INFO - Finished NKE
+2019-02-12 01:18:58,642 - .\enrich.py - INFO - Finished NI
+2019-02-12 01:18:58,792 - .\enrich.py - INFO - Finished NBL
+2019-02-12 01:18:58,936 - .\enrich.py - INFO - Finished JWN
+2019-02-12 01:18:59,097 - .\enrich.py - INFO - Finished NSC
+2019-02-12 01:18:59,252 - .\enrich.py - INFO - Finished NTRS
+2019-02-12 01:18:59,535 - .\enrich.py - INFO - Finished NOC
+2019-02-12 01:18:59,689 - .\enrich.py - INFO - Finished NCLH
+2019-02-12 01:18:59,864 - .\enrich.py - INFO - Finished NRG
+2019-02-12 01:19:00,055 - .\enrich.py - INFO - Finished NUE
+2019-02-12 01:19:00,222 - .\enrich.py - INFO - Finished NVDA
+2019-02-12 01:19:00,434 - .\enrich.py - INFO - Finished ORLY
+2019-02-12 01:19:00,617 - .\enrich.py - INFO - Finished OXY
+2019-02-12 01:19:00,778 - .\enrich.py - INFO - Finished OMC
+2019-02-12 01:19:00,977 - .\enrich.py - INFO - Finished OKE
+2019-02-12 01:19:01,146 - .\enrich.py - INFO - Finished ORCL
+2019-02-12 01:19:01,305 - .\enrich.py - INFO - Finished PCAR
+2019-02-12 01:19:01,512 - .\enrich.py - INFO - Finished PKG
+2019-02-12 01:19:01,664 - .\enrich.py - INFO - Finished PH
+2019-02-12 01:19:01,808 - .\enrich.py - INFO - Finished PAYX
+2019-02-12 01:19:01,960 - .\enrich.py - INFO - Finished PYPL
+2019-02-12 01:19:02,156 - .\enrich.py - INFO - Finished PNR
+2019-02-12 01:19:02,359 - .\enrich.py - INFO - Finished PBCT
+2019-02-12 01:19:02,515 - .\enrich.py - INFO - Finished PEP
+2019-02-12 01:19:02,665 - .\enrich.py - INFO - Finished PKI
+2019-02-12 01:19:02,818 - .\enrich.py - INFO - Finished PRGO
+2019-02-12 01:19:03,070 - .\enrich.py - INFO - Finished PFE
+2019-02-12 01:19:03,245 - .\enrich.py - INFO - Finished PCG
+2019-02-12 01:19:03,394 - .\enrich.py - INFO - Finished PM
+2019-02-12 01:19:03,618 - .\enrich.py - INFO - Finished PSX
+2019-02-12 01:19:03,798 - .\enrich.py - INFO - Finished PNW
+2019-02-12 01:19:03,986 - .\enrich.py - INFO - Finished PXD
+2019-02-12 01:19:04,147 - .\enrich.py - INFO - Finished PNC
+2019-02-12 01:19:04,294 - .\enrich.py - INFO - Finished RL
+2019-02-12 01:19:04,445 - .\enrich.py - INFO - Finished PPG
+2019-02-12 01:19:04,601 - .\enrich.py - INFO - Finished PPL
+2019-02-12 01:19:04,603 - .\enrich.py - ERROR - Cannot find ../data/PX_price_data.csv . . . will retry.
+2019-02-12 01:19:10,609 - .\enrich.py - ERROR - Cannot find ../data/PX_price_data.csv . . . will retry.
+2019-02-12 01:19:16,797 - .\enrich.py - INFO - Finished PX
+2019-02-12 01:19:16,799 - .\enrich.py - ERROR - Cannot find ../data/PFG_price_data.csv . . . will retry.
+2019-02-12 01:19:22,802 - .\enrich.py - ERROR - Cannot find ../data/PFG_price_data.csv . . . will retry.
+2019-02-12 01:19:28,953 - .\enrich.py - INFO - Finished PFG
+2019-02-12 01:19:28,953 - .\enrich.py - ERROR - Cannot find ../data/PG_price_data.csv . . . will retry.
+2019-02-12 01:19:34,965 - .\enrich.py - ERROR - Cannot find ../data/PG_price_data.csv . . . will retry.
+2019-02-12 01:19:41,184 - .\enrich.py - INFO - Finished PG
+2019-02-12 01:19:41,186 - .\enrich.py - ERROR - Cannot find ../data/PGR_price_data.csv . . . will retry.
+2019-02-12 01:19:47,188 - .\enrich.py - ERROR - Cannot find ../data/PGR_price_data.csv . . . will retry.
+2019-02-12 01:19:53,345 - .\enrich.py - INFO - Finished PGR
+2019-02-12 01:19:53,347 - .\enrich.py - ERROR - Cannot find ../data/PLD_price_data.csv . . . will retry.
+2019-02-12 01:19:59,356 - .\enrich.py - ERROR - Cannot find ../data/PLD_price_data.csv . . . will retry.
+2019-02-12 01:20:05,357 - .\enrich.py - ERROR - Cannot find ../data/PLD_price_data.csv . . . will retry.
+2019-02-12 01:20:11,518 - .\enrich.py - INFO - Finished PLD
+2019-02-12 01:20:11,523 - .\enrich.py - ERROR - Cannot find ../data/PRU_price_data.csv . . . will retry.
+2019-02-12 01:20:17,539 - .\enrich.py - ERROR - Cannot find ../data/PRU_price_data.csv . . . will retry.
+2019-02-12 01:20:23,707 - .\enrich.py - INFO - Finished PRU
+2019-02-12 01:20:23,707 - .\enrich.py - ERROR - Cannot find ../data/PEG_price_data.csv . . . will retry.
+2019-02-12 01:20:29,713 - .\enrich.py - ERROR - Cannot find ../data/PEG_price_data.csv . . . will retry.
+2019-02-12 01:20:35,909 - .\enrich.py - INFO - Finished PEG
+2019-02-12 01:20:35,909 - .\enrich.py - ERROR - Cannot find ../data/PSA_price_data.csv . . . will retry.
+2019-02-12 01:20:41,912 - .\enrich.py - ERROR - Cannot find ../data/PSA_price_data.csv . . . will retry.
+2019-02-12 01:20:48,093 - .\enrich.py - INFO - Finished PSA
+2019-02-12 01:20:48,093 - .\enrich.py - ERROR - Cannot find ../data/PHM_price_data.csv . . . will retry.
+2019-02-12 01:20:54,094 - .\enrich.py - ERROR - Cannot find ../data/PHM_price_data.csv . . . will retry.
+2019-02-12 01:21:00,248 - .\enrich.py - INFO - Finished PHM
+2019-02-12 01:21:00,248 - .\enrich.py - ERROR - Cannot find ../data/PVH_price_data.csv . . . will retry.
+2019-02-12 01:21:06,253 - .\enrich.py - ERROR - Cannot find ../data/PVH_price_data.csv . . . will retry.
+2019-02-12 01:21:12,253 - .\enrich.py - ERROR - Cannot find ../data/PVH_price_data.csv . . . will retry.
+2019-02-12 01:21:18,427 - .\enrich.py - INFO - Finished PVH
+2019-02-12 01:21:18,427 - .\enrich.py - ERROR - Cannot find ../data/QRVO_price_data.csv . . . will retry.
+2019-02-12 01:21:24,435 - .\enrich.py - ERROR - Cannot find ../data/QRVO_price_data.csv . . . will retry.
+2019-02-12 01:21:30,596 - .\enrich.py - INFO - Finished QRVO
+2019-02-12 01:21:30,596 - .\enrich.py - ERROR - Cannot find ../data/QCOM_price_data.csv . . . will retry.
+2019-02-12 01:21:36,608 - .\enrich.py - ERROR - Cannot find ../data/QCOM_price_data.csv . . . will retry.
+2019-02-12 01:21:42,752 - .\enrich.py - INFO - Finished QCOM
+2019-02-12 01:21:42,752 - .\enrich.py - ERROR - Cannot find ../data/PWR_price_data.csv . . . will retry.
+2019-02-12 01:21:48,766 - .\enrich.py - ERROR - Cannot find ../data/PWR_price_data.csv . . . will retry.
+2019-02-12 01:21:54,925 - .\enrich.py - INFO - Finished PWR
+2019-02-12 01:21:54,940 - .\enrich.py - ERROR - Cannot find ../data/DGX_price_data.csv . . . will retry.
+2019-02-12 01:22:00,955 - .\enrich.py - ERROR - Cannot find ../data/DGX_price_data.csv . . . will retry.
+2019-02-12 01:22:07,089 - .\enrich.py - INFO - Finished DGX
+2019-02-12 01:22:07,105 - .\enrich.py - ERROR - Cannot find ../data/RRC_price_data.csv . . . will retry.
+2019-02-12 01:22:13,113 - .\enrich.py - ERROR - Cannot find ../data/RRC_price_data.csv . . . will retry.
+2019-02-12 01:22:19,308 - .\enrich.py - INFO - Finished RRC
+2019-02-12 01:22:19,308 - .\enrich.py - ERROR - Cannot find ../data/RJF_price_data.csv . . . will retry.
+2019-02-12 01:22:25,321 - .\enrich.py - ERROR - Cannot find ../data/RJF_price_data.csv . . . will retry.
+2019-02-12 01:22:31,500 - .\enrich.py - INFO - Finished RJF
+2019-02-12 01:22:31,500 - .\enrich.py - ERROR - Cannot find ../data/RTN_price_data.csv . . . will retry.
+2019-02-12 01:22:37,503 - .\enrich.py - ERROR - Cannot find ../data/RTN_price_data.csv . . . will retry.
+2019-02-12 01:22:43,697 - .\enrich.py - INFO - Finished RTN
+2019-02-12 01:22:43,699 - .\enrich.py - ERROR - Cannot find ../data/O_price_data.csv . . . will retry.
+2019-02-12 01:22:49,702 - .\enrich.py - ERROR - Cannot find ../data/O_price_data.csv . . . will retry.
+2019-02-12 01:22:55,872 - .\enrich.py - INFO - Finished O
+2019-02-12 01:22:55,874 - .\enrich.py - ERROR - Cannot find ../data/RHT_price_data.csv . . . will retry.
+2019-02-12 01:23:01,885 - .\enrich.py - ERROR - Cannot find ../data/RHT_price_data.csv . . . will retry.
+2019-02-12 01:23:08,049 - .\enrich.py - INFO - Finished RHT
+2019-02-12 01:23:08,051 - .\enrich.py - ERROR - Cannot find ../data/REG_price_data.csv . . . will retry.
+2019-02-12 01:23:14,064 - .\enrich.py - ERROR - Cannot find ../data/REG_price_data.csv . . . will retry.
+2019-02-12 01:23:20,233 - .\enrich.py - INFO - Finished REG
+2019-02-12 01:23:20,237 - .\enrich.py - ERROR - Cannot find ../data/REGN_price_data.csv . . . will retry.
+2019-02-12 01:23:26,244 - .\enrich.py - ERROR - Cannot find ../data/REGN_price_data.csv . . . will retry.
+2019-02-12 01:23:32,401 - .\enrich.py - INFO - Finished REGN
+2019-02-12 01:23:32,401 - .\enrich.py - ERROR - Cannot find ../data/RF_price_data.csv . . . will retry.
+2019-02-12 01:23:38,401 - .\enrich.py - ERROR - Cannot find ../data/RF_price_data.csv . . . will retry.
+2019-02-12 01:23:44,552 - .\enrich.py - INFO - Finished RF
+2019-02-12 01:23:44,567 - .\enrich.py - ERROR - Cannot find ../data/RSG_price_data.csv . . . will retry.
+2019-02-12 01:23:50,580 - .\enrich.py - ERROR - Cannot find ../data/RSG_price_data.csv . . . will retry.
+2019-02-12 01:23:56,588 - .\enrich.py - ERROR - Cannot find ../data/RSG_price_data.csv . . . will retry.
+2019-02-12 01:24:02,751 - .\enrich.py - INFO - Finished RSG
+2019-02-12 01:24:02,751 - .\enrich.py - ERROR - Cannot find ../data/RMD_price_data.csv . . . will retry.
+2019-02-12 01:24:08,752 - .\enrich.py - ERROR - Cannot find ../data/RMD_price_data.csv . . . will retry.
+2019-02-12 01:24:14,909 - .\enrich.py - INFO - Finished RMD
+2019-02-12 01:24:14,909 - .\enrich.py - ERROR - Cannot find ../data/RHI_price_data.csv . . . will retry.
+2019-02-12 01:24:20,918 - .\enrich.py - ERROR - Cannot find ../data/RHI_price_data.csv . . . will retry.
+2019-02-12 01:24:27,076 - .\enrich.py - INFO - Finished RHI
+2019-02-12 01:24:27,076 - .\enrich.py - ERROR - Cannot find ../data/ROK_price_data.csv . . . will retry.
+2019-02-12 01:24:33,080 - .\enrich.py - ERROR - Cannot find ../data/ROK_price_data.csv . . . will retry.
+2019-02-12 01:24:39,245 - .\enrich.py - INFO - Finished ROK
+2019-02-12 01:24:39,245 - .\enrich.py - ERROR - Cannot find ../data/COL_price_data.csv . . . will retry.
+2019-02-12 01:24:45,258 - .\enrich.py - ERROR - Cannot find ../data/COL_price_data.csv . . . will retry.
+2019-02-12 01:24:51,424 - .\enrich.py - INFO - Finished COL
+2019-02-12 01:24:51,424 - .\enrich.py - ERROR - Cannot find ../data/ROP_price_data.csv . . . will retry.
+2019-02-12 01:24:57,438 - .\enrich.py - ERROR - Cannot find ../data/ROP_price_data.csv . . . will retry.
+2019-02-12 01:25:03,596 - .\enrich.py - INFO - Finished ROP
+2019-02-12 01:25:03,596 - .\enrich.py - ERROR - Cannot find ../data/ROST_price_data.csv . . . will retry.
+2019-02-12 01:25:09,601 - .\enrich.py - ERROR - Cannot find ../data/ROST_price_data.csv . . . will retry.
+2019-02-12 01:25:15,798 - .\enrich.py - INFO - Finished ROST
+2019-02-12 01:25:15,798 - .\enrich.py - ERROR - Cannot find ../data/RCL_price_data.csv . . . will retry.
+2019-02-12 01:25:21,799 - .\enrich.py - ERROR - Cannot find ../data/RCL_price_data.csv . . . will retry.
+2019-02-12 01:25:27,982 - .\enrich.py - INFO - Finished RCL
+2019-02-12 01:25:27,982 - .\enrich.py - ERROR - Cannot find ../data/SPGI_price_data.csv . . . will retry.
+2019-02-12 01:25:33,991 - .\enrich.py - ERROR - Cannot find ../data/SPGI_price_data.csv . . . will retry.
+2019-02-12 01:25:40,162 - .\enrich.py - INFO - Finished SPGI
+2019-02-12 01:25:40,162 - .\enrich.py - ERROR - Cannot find ../data/CRM_price_data.csv . . . will retry.
+2019-02-12 01:25:46,163 - .\enrich.py - ERROR - Cannot find ../data/CRM_price_data.csv . . . will retry.
+2019-02-12 01:25:52,353 - .\enrich.py - INFO - Finished CRM
+2019-02-12 01:25:52,355 - .\enrich.py - ERROR - Cannot find ../data/SBAC_price_data.csv . . . will retry.
+2019-02-12 01:25:58,357 - .\enrich.py - ERROR - Cannot find ../data/SBAC_price_data.csv . . . will retry.
+2019-02-12 01:26:04,517 - .\enrich.py - INFO - Finished SBAC
+2019-02-12 01:26:04,520 - .\enrich.py - ERROR - Cannot find ../data/SCG_price_data.csv . . . will retry.
+2019-02-12 01:26:10,523 - .\enrich.py - ERROR - Cannot find ../data/SCG_price_data.csv . . . will retry.
+2019-02-12 01:26:16,685 - .\enrich.py - INFO - Finished SCG
+2019-02-12 01:26:16,690 - .\enrich.py - ERROR - Cannot find ../data/SLB_price_data.csv . . . will retry.
+2019-02-12 01:26:22,693 - .\enrich.py - ERROR - Cannot find ../data/SLB_price_data.csv . . . will retry.
+2019-02-12 01:26:28,903 - .\enrich.py - INFO - Finished SLB
+2019-02-12 01:26:28,908 - .\enrich.py - ERROR - Cannot find ../data/STX_price_data.csv . . . will retry.
+2019-02-12 01:26:34,908 - .\enrich.py - ERROR - Cannot find ../data/STX_price_data.csv . . . will retry.
+2019-02-12 01:26:41,061 - .\enrich.py - INFO - Finished STX
+2019-02-12 01:26:41,061 - .\enrich.py - ERROR - Cannot find ../data/SEE_price_data.csv . . . will retry.
+2019-02-12 01:26:47,062 - .\enrich.py - ERROR - Cannot find ../data/SEE_price_data.csv . . . will retry.
+2019-02-12 01:26:53,067 - .\enrich.py - ERROR - Cannot find ../data/SEE_price_data.csv . . . will retry.
+2019-02-12 01:26:59,230 - .\enrich.py - INFO - Finished SEE
+2019-02-12 01:26:59,230 - .\enrich.py - ERROR - Cannot find ../data/SRE_price_data.csv . . . will retry.
+2019-02-12 01:27:05,234 - .\enrich.py - ERROR - Cannot find ../data/SRE_price_data.csv . . . will retry.
+2019-02-12 01:27:11,400 - .\enrich.py - INFO - Finished SRE
+2019-02-12 01:27:11,405 - .\enrich.py - ERROR - Cannot find ../data/SHW_price_data.csv . . . will retry.
+2019-02-12 01:27:17,407 - .\enrich.py - ERROR - Cannot find ../data/SHW_price_data.csv . . . will retry.
+2019-02-12 01:27:23,558 - .\enrich.py - INFO - Finished SHW
+2019-02-12 01:27:23,563 - .\enrich.py - ERROR - Cannot find ../data/SPG_price_data.csv . . . will retry.
+2019-02-12 01:27:29,565 - .\enrich.py - ERROR - Cannot find ../data/SPG_price_data.csv . . . will retry.
+2019-02-12 01:27:35,718 - .\enrich.py - INFO - Finished SPG
+2019-02-12 01:27:35,718 - .\enrich.py - ERROR - Cannot find ../data/SWKS_price_data.csv . . . will retry.
+2019-02-12 01:27:41,722 - .\enrich.py - ERROR - Cannot find ../data/SWKS_price_data.csv . . . will retry.
+2019-02-12 01:27:47,883 - .\enrich.py - INFO - Finished SWKS
+2019-02-12 01:27:47,883 - .\enrich.py - ERROR - Cannot find ../data/SLG_price_data.csv . . . will retry.
+2019-02-12 01:27:53,884 - .\enrich.py - ERROR - Cannot find ../data/SLG_price_data.csv . . . will retry.
+2019-02-12 01:28:00,037 - .\enrich.py - INFO - Finished SLG
+2019-02-12 01:28:00,042 - .\enrich.py - ERROR - Cannot find ../data/SNA_price_data.csv . . . will retry.
+2019-02-12 01:28:06,046 - .\enrich.py - ERROR - Cannot find ../data/SNA_price_data.csv . . . will retry.
+2019-02-12 01:28:12,220 - .\enrich.py - INFO - Finished SNA
+2019-02-12 01:28:12,220 - .\enrich.py - ERROR - Cannot find ../data/SO_price_data.csv . . . will retry.
+2019-02-12 01:28:18,221 - .\enrich.py - ERROR - Cannot find ../data/SO_price_data.csv . . . will retry.
+2019-02-12 01:28:24,395 - .\enrich.py - INFO - Finished SO
+2019-02-12 01:28:24,395 - .\enrich.py - ERROR - Cannot find ../data/LUV_price_data.csv . . . will retry.
+2019-02-12 01:28:30,397 - .\enrich.py - ERROR - Cannot find ../data/LUV_price_data.csv . . . will retry.
+2019-02-12 01:28:36,564 - .\enrich.py - INFO - Finished LUV
+2019-02-12 01:28:36,569 - .\enrich.py - ERROR - Cannot find ../data/SWK_price_data.csv . . . will retry.
+2019-02-12 01:28:42,572 - .\enrich.py - ERROR - Cannot find ../data/SWK_price_data.csv . . . will retry.
+2019-02-12 01:28:48,752 - .\enrich.py - INFO - Finished SWK
+2019-02-12 01:28:48,754 - .\enrich.py - ERROR - Cannot find ../data/SBUX_price_data.csv . . . will retry.
+2019-02-12 01:28:54,757 - .\enrich.py - ERROR - Cannot find ../data/SBUX_price_data.csv . . . will retry.
+2019-02-12 01:29:00,914 - .\enrich.py - INFO - Finished SBUX
+2019-02-12 01:29:00,919 - .\enrich.py - ERROR - Cannot find ../data/STT_price_data.csv . . . will retry.
+2019-02-12 01:29:06,923 - .\enrich.py - ERROR - Cannot find ../data/STT_price_data.csv . . . will retry.
+2019-02-12 01:29:13,090 - .\enrich.py - INFO - Finished STT
+2019-02-12 01:29:13,094 - .\enrich.py - ERROR - Cannot find ../data/SRCL_price_data.csv . . . will retry.
+2019-02-12 01:29:19,097 - .\enrich.py - ERROR - Cannot find ../data/SRCL_price_data.csv . . . will retry.
+2019-02-12 01:29:25,278 - .\enrich.py - INFO - Finished SRCL
+2019-02-12 01:29:25,278 - .\enrich.py - ERROR - Cannot find ../data/SYK_price_data.csv . . . will retry.
+2019-02-12 01:29:31,279 - .\enrich.py - ERROR - Cannot find ../data/SYK_price_data.csv . . . will retry.
+2019-02-12 01:29:37,293 - .\enrich.py - ERROR - Cannot find ../data/SYK_price_data.csv . . . will retry.
+2019-02-12 01:29:43,453 - .\enrich.py - INFO - Finished SYK
+2019-02-12 01:29:43,469 - .\enrich.py - ERROR - Cannot find ../data/STI_price_data.csv . . . will retry.
+2019-02-12 01:29:49,481 - .\enrich.py - ERROR - Cannot find ../data/STI_price_data.csv . . . will retry.
+2019-02-12 01:29:55,643 - .\enrich.py - INFO - Finished STI
+2019-02-12 01:29:55,643 - .\enrich.py - ERROR - Cannot find ../data/SIVB_price_data.csv . . . will retry.
+2019-02-12 01:30:01,643 - .\enrich.py - ERROR - Cannot find ../data/SIVB_price_data.csv . . . will retry.
+2019-02-12 01:30:07,800 - .\enrich.py - INFO - Finished SIVB
+2019-02-12 01:30:07,800 - .\enrich.py - ERROR - Cannot find ../data/SYMC_price_data.csv . . . will retry.
+2019-02-12 01:30:13,815 - .\enrich.py - ERROR - Cannot find ../data/SYMC_price_data.csv . . . will retry.
+2019-02-12 01:30:19,980 - .\enrich.py - INFO - Finished SYMC
+2019-02-12 01:30:19,980 - .\enrich.py - ERROR - Cannot find ../data/SYF_price_data.csv . . . will retry.
+2019-02-12 01:30:25,994 - .\enrich.py - ERROR - Cannot find ../data/SYF_price_data.csv . . . will retry.
+2019-02-12 01:30:32,171 - .\enrich.py - INFO - Finished SYF
+2019-02-12 01:30:32,173 - .\enrich.py - ERROR - Cannot find ../data/SNPS_price_data.csv . . . will retry.
+2019-02-12 01:30:38,174 - .\enrich.py - ERROR - Cannot find ../data/SNPS_price_data.csv . . . will retry.
+2019-02-12 01:30:44,344 - .\enrich.py - INFO - Finished SNPS
+2019-02-12 01:30:44,344 - .\enrich.py - ERROR - Cannot find ../data/SYY_price_data.csv . . . will retry.
+2019-02-12 01:30:50,346 - .\enrich.py - ERROR - Cannot find ../data/SYY_price_data.csv . . . will retry.
+2019-02-12 01:30:56,515 - .\enrich.py - INFO - Finished SYY
+2019-02-12 01:30:56,515 - .\enrich.py - ERROR - Cannot find ../data/TROW_price_data.csv . . . will retry.
+2019-02-12 01:31:02,515 - .\enrich.py - ERROR - Cannot find ../data/TROW_price_data.csv . . . will retry.
+2019-02-12 01:31:08,661 - .\enrich.py - INFO - Finished TROW
+2019-02-12 01:31:08,661 - .\enrich.py - ERROR - Cannot find ../data/TTWO_price_data.csv . . . will retry.
+2019-02-12 01:31:14,663 - .\enrich.py - ERROR - Cannot find ../data/TTWO_price_data.csv . . . will retry.
+2019-02-12 01:31:20,846 - .\enrich.py - INFO - Finished TTWO
+2019-02-12 01:31:20,846 - .\enrich.py - ERROR - Cannot find ../data/TPR_price_data.csv . . . will retry.
+2019-02-12 01:31:26,858 - .\enrich.py - ERROR - Cannot find ../data/TPR_price_data.csv . . . will retry.
+2019-02-12 01:31:33,017 - .\enrich.py - INFO - Finished TPR
+2019-02-12 01:31:33,017 - .\enrich.py - ERROR - Cannot find ../data/TGT_price_data.csv . . . will retry.
+2019-02-12 01:31:39,025 - .\enrich.py - ERROR - Cannot find ../data/TGT_price_data.csv . . . will retry.
+2019-02-12 01:31:45,237 - .\enrich.py - INFO - Finished TGT
+2019-02-12 01:31:45,237 - .\enrich.py - ERROR - Cannot find ../data/TEL_price_data.csv . . . will retry.
+2019-02-12 01:31:51,246 - .\enrich.py - ERROR - Cannot find ../data/TEL_price_data.csv . . . will retry.
+2019-02-12 01:31:57,440 - .\enrich.py - INFO - Finished TEL
+2019-02-12 01:31:57,442 - .\enrich.py - ERROR - Cannot find ../data/FTI_price_data.csv . . . will retry.
+2019-02-12 01:32:03,452 - .\enrich.py - ERROR - Cannot find ../data/FTI_price_data.csv . . . will retry.
+2019-02-12 01:32:09,612 - .\enrich.py - INFO - Finished FTI
+2019-02-12 01:32:09,612 - .\enrich.py - ERROR - Cannot find ../data/TXN_price_data.csv . . . will retry.
+2019-02-12 01:32:15,613 - .\enrich.py - ERROR - Cannot find ../data/TXN_price_data.csv . . . will retry.
+2019-02-12 01:32:21,795 - .\enrich.py - INFO - Finished TXN
+2019-02-12 01:32:21,797 - .\enrich.py - ERROR - Cannot find ../data/TXT_price_data.csv . . . will retry.
+2019-02-12 01:32:27,800 - .\enrich.py - ERROR - Cannot find ../data/TXT_price_data.csv . . . will retry.
+2019-02-12 01:32:33,964 - .\enrich.py - INFO - Finished TXT
+2019-02-12 01:32:33,964 - .\enrich.py - ERROR - Cannot find ../data/BK_price_data.csv . . . will retry.
+2019-02-12 01:32:39,966 - .\enrich.py - ERROR - Cannot find ../data/BK_price_data.csv . . . will retry.
+2019-02-12 01:32:45,970 - .\enrich.py - ERROR - Cannot find ../data/BK_price_data.csv . . . will retry.
+2019-02-12 01:32:52,129 - .\enrich.py - INFO - Finished BK
+2019-02-12 01:32:52,129 - .\enrich.py - ERROR - Cannot find ../data/CLX_price_data.csv . . . will retry.
+2019-02-12 01:32:58,131 - .\enrich.py - ERROR - Cannot find ../data/CLX_price_data.csv . . . will retry.
+2019-02-12 01:33:04,309 - .\enrich.py - INFO - Finished CLX
+2019-02-12 01:33:04,309 - .\enrich.py - ERROR - Cannot find ../data/COO_price_data.csv . . . will retry.
+2019-02-12 01:33:10,310 - .\enrich.py - ERROR - Cannot find ../data/COO_price_data.csv . . . will retry.
+2019-02-12 01:33:16,478 - .\enrich.py - INFO - Finished COO
+2019-02-12 01:33:16,480 - .\enrich.py - ERROR - Cannot find ../data/HSY_price_data.csv . . . will retry.
+2019-02-12 01:33:22,486 - .\enrich.py - ERROR - Cannot find ../data/HSY_price_data.csv . . . will retry.
+2019-02-12 01:33:28,670 - .\enrich.py - INFO - Finished HSY
+2019-02-12 01:33:28,670 - .\enrich.py - ERROR - Cannot find ../data/MOS_price_data.csv . . . will retry.
+2019-02-12 01:33:34,673 - .\enrich.py - ERROR - Cannot find ../data/MOS_price_data.csv . . . will retry.
+2019-02-12 01:33:40,842 - .\enrich.py - INFO - Finished MOS
+2019-02-12 01:33:40,842 - .\enrich.py - ERROR - Cannot find ../data/TRV_price_data.csv . . . will retry.
+2019-02-12 01:33:46,846 - .\enrich.py - ERROR - Cannot find ../data/TRV_price_data.csv . . . will retry.
+2019-02-12 01:33:53,011 - .\enrich.py - INFO - Finished TRV
+2019-02-12 01:33:53,011 - .\enrich.py - ERROR - Cannot find ../data/DIS_price_data.csv . . . will retry.
+2019-02-12 01:33:59,023 - .\enrich.py - ERROR - Cannot find ../data/DIS_price_data.csv . . . will retry.
+2019-02-12 01:34:05,216 - .\enrich.py - INFO - Finished DIS
+2019-02-12 01:34:05,218 - .\enrich.py - ERROR - Cannot find ../data/TMO_price_data.csv . . . will retry.
+2019-02-12 01:34:11,229 - .\enrich.py - ERROR - Cannot find ../data/TMO_price_data.csv . . . will retry.
+2019-02-12 01:34:17,400 - .\enrich.py - INFO - Finished TMO
+2019-02-12 01:34:17,400 - .\enrich.py - ERROR - Cannot find ../data/TIF_price_data.csv . . . will retry.
+2019-02-12 01:34:23,404 - .\enrich.py - ERROR - Cannot find ../data/TIF_price_data.csv . . . will retry.
+2019-02-12 01:34:29,565 - .\enrich.py - INFO - Finished TIF
+2019-02-12 01:34:29,565 - .\enrich.py - ERROR - Cannot find ../data/TWX_price_data.csv . . . will retry.
+2019-02-12 01:34:35,571 - .\enrich.py - ERROR - Cannot find ../data/TWX_price_data.csv . . . will retry.
+2019-02-12 01:34:41,752 - .\enrich.py - INFO - Finished TWX
+2019-02-12 01:34:41,754 - .\enrich.py - ERROR - Cannot find ../data/TJX_price_data.csv . . . will retry.
+2019-02-12 01:34:47,757 - .\enrich.py - ERROR - Cannot find ../data/TJX_price_data.csv . . . will retry.
+2019-02-12 01:34:53,920 - .\enrich.py - INFO - Finished TJX
+2019-02-12 01:34:53,923 - .\enrich.py - ERROR - Cannot find ../data/TMK_price_data.csv . . . will retry.
+2019-02-12 01:34:59,927 - .\enrich.py - ERROR - Cannot find ../data/TMK_price_data.csv . . . will retry.
+2019-02-12 01:35:06,082 - .\enrich.py - INFO - Finished TMK
+2019-02-12 01:35:06,085 - .\enrich.py - ERROR - Cannot find ../data/TSS_price_data.csv . . . will retry.
+2019-02-12 01:35:12,094 - .\enrich.py - ERROR - Cannot find ../data/TSS_price_data.csv . . . will retry.
+2019-02-12 01:35:18,285 - .\enrich.py - INFO - Finished TSS
+2019-02-12 01:35:18,288 - .\enrich.py - ERROR - Cannot find ../data/TSCO_price_data.csv . . . will retry.
+2019-02-12 01:35:24,290 - .\enrich.py - ERROR - Cannot find ../data/TSCO_price_data.csv . . . will retry.
+2019-02-12 01:35:30,474 - .\enrich.py - INFO - Finished TSCO
+2019-02-12 01:35:30,474 - .\enrich.py - ERROR - Cannot find ../data/TDG_price_data.csv . . . will retry.
+2019-02-12 01:35:36,477 - .\enrich.py - ERROR - Cannot find ../data/TDG_price_data.csv . . . will retry.
+2019-02-12 01:35:42,480 - .\enrich.py - ERROR - Cannot find ../data/TDG_price_data.csv . . . will retry.
+2019-02-12 01:35:48,658 - .\enrich.py - INFO - Finished TDG
+2019-02-12 01:35:48,660 - .\enrich.py - ERROR - Cannot find ../data/TRIP_price_data.csv . . . will retry.
+2019-02-12 01:35:54,668 - .\enrich.py - ERROR - Cannot find ../data/TRIP_price_data.csv . . . will retry.
+2019-02-12 01:36:00,830 - .\enrich.py - INFO - Finished TRIP
+2019-02-12 01:36:00,830 - .\enrich.py - ERROR - Cannot find ../data/FOXA_price_data.csv . . . will retry.
+2019-02-12 01:36:06,834 - .\enrich.py - ERROR - Cannot find ../data/FOXA_price_data.csv . . . will retry.
+2019-02-12 01:36:13,003 - .\enrich.py - INFO - Finished FOXA
+2019-02-12 01:36:13,003 - .\enrich.py - ERROR - Cannot find ../data/FOX_price_data.csv . . . will retry.
+2019-02-12 01:36:19,013 - .\enrich.py - ERROR - Cannot find ../data/FOX_price_data.csv . . . will retry.
+2019-02-12 01:36:25,186 - .\enrich.py - INFO - Finished FOX
+2019-02-12 01:36:25,188 - .\enrich.py - ERROR - Cannot find ../data/TSN_price_data.csv . . . will retry.
+2019-02-12 01:36:31,190 - .\enrich.py - ERROR - Cannot find ../data/TSN_price_data.csv . . . will retry.
+2019-02-12 01:36:37,376 - .\enrich.py - INFO - Finished TSN
+2019-02-12 01:36:37,376 - .\enrich.py - ERROR - Cannot find ../data/USB_price_data.csv . . . will retry.
+2019-02-12 01:36:43,380 - .\enrich.py - ERROR - Cannot find ../data/USB_price_data.csv . . . will retry.
+2019-02-12 01:36:49,555 - .\enrich.py - INFO - Finished USB
+2019-02-12 01:36:49,555 - .\enrich.py - ERROR - Cannot find ../data/UDR_price_data.csv . . . will retry.
+2019-02-12 01:36:55,567 - .\enrich.py - ERROR - Cannot find ../data/UDR_price_data.csv . . . will retry.
+2019-02-12 01:37:01,733 - .\enrich.py - INFO - Finished UDR
+2019-02-12 01:37:01,735 - .\enrich.py - ERROR - Cannot find ../data/ULTA_price_data.csv . . . will retry.
+2019-02-12 01:37:07,737 - .\enrich.py - ERROR - Cannot find ../data/ULTA_price_data.csv . . . will retry.
+2019-02-12 01:37:13,913 - .\enrich.py - INFO - Finished ULTA
+2019-02-12 01:37:13,916 - .\enrich.py - ERROR - Cannot find ../data/UAA_price_data.csv . . . will retry.
+2019-02-12 01:37:19,919 - .\enrich.py - ERROR - Cannot find ../data/UAA_price_data.csv . . . will retry.
+2019-02-12 01:37:26,098 - .\enrich.py - INFO - Finished UAA
+2019-02-12 01:37:26,100 - .\enrich.py - ERROR - Cannot find ../data/UA_price_data.csv . . . will retry.
+2019-02-12 01:37:32,105 - .\enrich.py - ERROR - Cannot find ../data/UA_price_data.csv . . . will retry.
+2019-02-12 01:37:38,312 - .\enrich.py - INFO - Finished UA
+2019-02-12 01:37:38,314 - .\enrich.py - ERROR - Cannot find ../data/UNP_price_data.csv . . . will retry.
+2019-02-12 01:37:44,318 - .\enrich.py - ERROR - Cannot find ../data/UNP_price_data.csv . . . will retry.
+2019-02-12 01:37:50,500 - .\enrich.py - INFO - Finished UNP
+2019-02-12 01:37:50,502 - .\enrich.py - ERROR - Cannot find ../data/UAL_price_data.csv . . . will retry.
+2019-02-12 01:37:56,517 - .\enrich.py - ERROR - Cannot find ../data/UAL_price_data.csv . . . will retry.
+2019-02-12 01:38:02,677 - .\enrich.py - INFO - Finished UAL
+2019-02-12 01:38:02,679 - .\enrich.py - ERROR - Cannot find ../data/UNH_price_data.csv . . . will retry.
+2019-02-12 01:38:08,692 - .\enrich.py - ERROR - Cannot find ../data/UNH_price_data.csv . . . will retry.
+2019-02-12 01:38:14,859 - .\enrich.py - INFO - Finished UNH
+2019-02-12 01:38:14,861 - .\enrich.py - ERROR - Cannot find ../data/UPS_price_data.csv . . . will retry.
+2019-02-12 01:38:20,865 - .\enrich.py - ERROR - Cannot find ../data/UPS_price_data.csv . . . will retry.
+2019-02-12 01:38:27,027 - .\enrich.py - INFO - Finished UPS
+2019-02-12 01:38:27,043 - .\enrich.py - ERROR - Cannot find ../data/URI_price_data.csv . . . will retry.
+2019-02-12 01:38:33,046 - .\enrich.py - ERROR - Cannot find ../data/URI_price_data.csv . . . will retry.
+2019-02-12 01:38:39,056 - .\enrich.py - ERROR - Cannot find ../data/URI_price_data.csv . . . will retry.
+2019-02-12 01:38:45,231 - .\enrich.py - INFO - Finished URI
+2019-02-12 01:38:45,233 - .\enrich.py - ERROR - Cannot find ../data/UTX_price_data.csv . . . will retry.
+2019-02-12 01:38:51,238 - .\enrich.py - ERROR - Cannot find ../data/UTX_price_data.csv . . . will retry.
+2019-02-12 01:38:57,429 - .\enrich.py - INFO - Finished UTX
+2019-02-12 01:38:57,432 - .\enrich.py - ERROR - Cannot find ../data/UHS_price_data.csv . . . will retry.
+2019-02-12 01:39:03,435 - .\enrich.py - ERROR - Cannot find ../data/UHS_price_data.csv . . . will retry.
+2019-02-12 01:39:09,619 - .\enrich.py - INFO - Finished UHS
+2019-02-12 01:39:09,621 - .\enrich.py - ERROR - Cannot find ../data/UNM_price_data.csv . . . will retry.
+2019-02-12 01:39:15,629 - .\enrich.py - ERROR - Cannot find ../data/UNM_price_data.csv . . . will retry.
+2019-02-12 01:39:21,831 - .\enrich.py - INFO - Finished UNM
+2019-02-12 01:39:21,846 - .\enrich.py - ERROR - Cannot find ../data/VFC_price_data.csv . . . will retry.
+2019-02-12 01:39:27,849 - .\enrich.py - ERROR - Cannot find ../data/VFC_price_data.csv . . . will retry.
+2019-02-12 01:39:34,019 - .\enrich.py - INFO - Finished VFC
+2019-02-12 01:39:34,021 - .\enrich.py - ERROR - Cannot find ../data/VLO_price_data.csv . . . will retry.
+2019-02-12 01:39:40,023 - .\enrich.py - ERROR - Cannot find ../data/VLO_price_data.csv . . . will retry.
+2019-02-12 01:39:46,220 - .\enrich.py - INFO - Finished VLO
+2019-02-12 01:39:46,220 - .\enrich.py - ERROR - Cannot find ../data/VAR_price_data.csv . . . will retry.
+2019-02-12 01:39:52,229 - .\enrich.py - ERROR - Cannot find ../data/VAR_price_data.csv . . . will retry.
+2019-02-12 01:39:58,393 - .\enrich.py - INFO - Finished VAR
+2019-02-12 01:39:58,393 - .\enrich.py - ERROR - Cannot find ../data/VTR_price_data.csv . . . will retry.
+2019-02-12 01:40:04,399 - .\enrich.py - ERROR - Cannot find ../data/VTR_price_data.csv . . . will retry.
+2019-02-12 01:40:10,568 - .\enrich.py - INFO - Finished VTR
+2019-02-12 01:40:10,568 - .\enrich.py - ERROR - Cannot find ../data/VRSN_price_data.csv . . . will retry.
+2019-02-12 01:40:16,572 - .\enrich.py - ERROR - Cannot find ../data/VRSN_price_data.csv . . . will retry.
+2019-02-12 01:40:22,754 - .\enrich.py - INFO - Finished VRSN
+2019-02-12 01:40:22,769 - .\enrich.py - ERROR - Cannot find ../data/VRSK_price_data.csv . . . will retry.
+2019-02-12 01:40:28,781 - .\enrich.py - ERROR - Cannot find ../data/VRSK_price_data.csv . . . will retry.
+2019-02-12 01:40:34,953 - .\enrich.py - INFO - Finished VRSK
+2019-02-12 01:40:34,953 - .\enrich.py - ERROR - Cannot find ../data/VZ_price_data.csv . . . will retry.
+2019-02-12 01:40:40,966 - .\enrich.py - ERROR - Cannot find ../data/VZ_price_data.csv . . . will retry.
+2019-02-12 01:40:47,127 - .\enrich.py - INFO - Finished VZ
+2019-02-12 01:40:47,131 - .\enrich.py - ERROR - Cannot find ../data/VRTX_price_data.csv . . . will retry.
+2019-02-12 01:40:53,146 - .\enrich.py - ERROR - Cannot find ../data/VRTX_price_data.csv . . . will retry.
+2019-02-12 01:40:59,339 - .\enrich.py - INFO - Finished VRTX
+2019-02-12 01:40:59,341 - .\enrich.py - ERROR - Cannot find ../data/VIAB_price_data.csv . . . will retry.
+2019-02-12 01:41:05,345 - .\enrich.py - ERROR - Cannot find ../data/VIAB_price_data.csv . . . will retry.
+2019-02-12 01:41:11,547 - .\enrich.py - INFO - Finished VIAB
+2019-02-12 01:41:11,549 - .\enrich.py - ERROR - Cannot find ../data/V_price_data.csv . . . will retry.
+2019-02-12 01:41:17,554 - .\enrich.py - ERROR - Cannot find ../data/V_price_data.csv . . . will retry.
+2019-02-12 01:41:23,748 - .\enrich.py - INFO - Finished V
+2019-02-12 01:41:23,748 - .\enrich.py - ERROR - Cannot find ../data/VNO_price_data.csv . . . will retry.
+2019-02-12 01:41:29,758 - .\enrich.py - ERROR - Cannot find ../data/VNO_price_data.csv . . . will retry.
+2019-02-12 01:41:35,927 - .\enrich.py - INFO - Finished VNO
+2019-02-12 01:41:35,930 - .\enrich.py - ERROR - Cannot find ../data/VMC_price_data.csv . . . will retry.
+2019-02-12 01:41:41,934 - .\enrich.py - ERROR - Cannot find ../data/VMC_price_data.csv . . . will retry.
+2019-02-12 01:41:47,937 - .\enrich.py - ERROR - Cannot find ../data/VMC_price_data.csv . . . will retry.
+2019-02-12 01:41:54,079 - .\enrich.py - INFO - Finished VMC
+2019-02-12 01:41:54,079 - .\enrich.py - ERROR - Cannot find ../data/WMT_price_data.csv . . . will retry.
+2019-02-12 01:42:00,084 - .\enrich.py - ERROR - Cannot find ../data/WMT_price_data.csv . . . will retry.
+2019-02-12 01:42:06,264 - .\enrich.py - INFO - Finished WMT
+2019-02-12 01:42:06,264 - .\enrich.py - ERROR - Cannot find ../data/WBA_price_data.csv . . . will retry.
+2019-02-12 01:42:12,267 - .\enrich.py - ERROR - Cannot find ../data/WBA_price_data.csv . . . will retry.
+2019-02-12 01:42:18,433 - .\enrich.py - INFO - Finished WBA
+2019-02-12 01:42:18,433 - .\enrich.py - ERROR - Cannot find ../data/WM_price_data.csv . . . will retry.
+2019-02-12 01:42:24,437 - .\enrich.py - ERROR - Cannot find ../data/WM_price_data.csv . . . will retry.
+2019-02-12 01:42:30,621 - .\enrich.py - INFO - Finished WM
+2019-02-12 01:42:30,624 - .\enrich.py - ERROR - Cannot find ../data/WAT_price_data.csv . . . will retry.
+2019-02-12 01:42:36,639 - .\enrich.py - ERROR - Cannot find ../data/WAT_price_data.csv . . . will retry.
+2019-02-12 01:42:42,844 - .\enrich.py - INFO - Finished WAT
+2019-02-12 01:42:42,846 - .\enrich.py - ERROR - Cannot find ../data/WEC_price_data.csv . . . will retry.
+2019-02-12 01:42:48,850 - .\enrich.py - ERROR - Cannot find ../data/WEC_price_data.csv . . . will retry.
+2019-02-12 01:42:55,044 - .\enrich.py - INFO - Finished WEC
+2019-02-12 01:42:55,044 - .\enrich.py - ERROR - Cannot find ../data/WFC_price_data.csv . . . will retry.
+2019-02-12 01:43:01,049 - .\enrich.py - ERROR - Cannot find ../data/WFC_price_data.csv . . . will retry.
+2019-02-12 01:43:07,204 - .\enrich.py - INFO - Finished WFC
+2019-02-12 01:43:07,206 - .\enrich.py - ERROR - Cannot find ../data/WELL_price_data.csv . . . will retry.
+2019-02-12 01:43:13,213 - .\enrich.py - ERROR - Cannot find ../data/WELL_price_data.csv . . . will retry.
+2019-02-12 01:43:19,408 - .\enrich.py - INFO - Finished WELL
+2019-02-12 01:43:19,411 - .\enrich.py - ERROR - Cannot find ../data/WDC_price_data.csv . . . will retry.
+2019-02-12 01:43:25,411 - .\enrich.py - ERROR - Cannot find ../data/WDC_price_data.csv . . . will retry.
+2019-02-12 01:43:31,586 - .\enrich.py - INFO - Finished WDC
+2019-02-12 01:43:31,586 - .\enrich.py - ERROR - Cannot find ../data/WU_price_data.csv . . . will retry.
+2019-02-12 01:43:37,588 - .\enrich.py - ERROR - Cannot find ../data/WU_price_data.csv . . . will retry.
+2019-02-12 01:43:43,795 - .\enrich.py - INFO - Finished WU
+2019-02-12 01:43:43,797 - .\enrich.py - ERROR - Cannot find ../data/WRK_price_data.csv . . . will retry.
+2019-02-12 01:43:49,800 - .\enrich.py - ERROR - Cannot find ../data/WRK_price_data.csv . . . will retry.
+2019-02-12 01:43:56,016 - .\enrich.py - INFO - Finished WRK
+2019-02-12 01:43:56,018 - .\enrich.py - ERROR - Cannot find ../data/WY_price_data.csv . . . will retry.
+2019-02-12 01:44:02,023 - .\enrich.py - ERROR - Cannot find ../data/WY_price_data.csv . . . will retry.
+2019-02-12 01:44:08,236 - .\enrich.py - INFO - Finished WY
+2019-02-12 01:44:08,241 - .\enrich.py - ERROR - Cannot find ../data/WHR_price_data.csv . . . will retry.
+2019-02-12 01:44:14,253 - .\enrich.py - ERROR - Cannot find ../data/WHR_price_data.csv . . . will retry.
+2019-02-12 01:44:20,524 - .\enrich.py - INFO - Finished WHR
+2019-02-12 01:44:20,529 - .\enrich.py - ERROR - Cannot find ../data/WMB_price_data.csv . . . will retry.
+2019-02-12 01:44:26,534 - .\enrich.py - ERROR - Cannot find ../data/WMB_price_data.csv . . . will retry.
+2019-02-12 01:44:32,722 - .\enrich.py - INFO - Finished WMB
+2019-02-12 01:44:32,724 - .\enrich.py - ERROR - Cannot find ../data/WLTW_price_data.csv . . . will retry.
+2019-02-12 01:44:38,731 - .\enrich.py - ERROR - Cannot find ../data/WLTW_price_data.csv . . . will retry.
+2019-02-12 01:44:44,893 - .\enrich.py - INFO - Finished WLTW
+2019-02-12 01:44:44,893 - .\enrich.py - ERROR - Cannot find ../data/WYN_price_data.csv . . . will retry.
+2019-02-12 01:44:50,897 - .\enrich.py - ERROR - Cannot find ../data/WYN_price_data.csv . . . will retry.
+2019-02-12 01:44:56,900 - .\enrich.py - ERROR - Cannot find ../data/WYN_price_data.csv . . . will retry.
+2019-02-12 01:45:03,079 - .\enrich.py - INFO - Finished WYN
+2019-02-12 01:45:03,079 - .\enrich.py - ERROR - Cannot find ../data/WYNN_price_data.csv . . . will retry.
+2019-02-12 01:45:09,092 - .\enrich.py - ERROR - Cannot find ../data/WYNN_price_data.csv . . . will retry.
+2019-02-12 01:45:15,274 - .\enrich.py - INFO - Finished WYNN
+2019-02-12 01:45:15,276 - .\enrich.py - ERROR - Cannot find ../data/XEL_price_data.csv . . . will retry.
+2019-02-12 01:45:21,289 - .\enrich.py - ERROR - Cannot find ../data/XEL_price_data.csv . . . will retry.
+2019-02-12 01:45:27,481 - .\enrich.py - INFO - Finished XEL
+2019-02-12 01:45:27,483 - .\enrich.py - ERROR - Cannot find ../data/XRX_price_data.csv . . . will retry.
+2019-02-12 01:45:33,486 - .\enrich.py - ERROR - Cannot find ../data/XRX_price_data.csv . . . will retry.
+2019-02-12 01:45:39,643 - .\enrich.py - INFO - Finished XRX
+2019-02-12 01:45:39,643 - .\enrich.py - ERROR - Cannot find ../data/XLNX_price_data.csv . . . will retry.
+2019-02-12 01:45:45,658 - .\enrich.py - ERROR - Cannot find ../data/XLNX_price_data.csv . . . will retry.
+2019-02-12 01:45:51,825 - .\enrich.py - INFO - Finished XLNX
+2019-02-12 01:45:51,825 - .\enrich.py - ERROR - Cannot find ../data/XL_price_data.csv . . . will retry.
+2019-02-12 01:45:57,828 - .\enrich.py - ERROR - Cannot find ../data/XL_price_data.csv . . . will retry.
+2019-02-12 01:46:03,995 - .\enrich.py - INFO - Finished XL
