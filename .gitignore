@@ -1,6 +1,9 @@
 # Project-specific files
 data/
-resources/apikeys.py
+*.pyc
+*.log
+data.zip
+key.txt
 
 # Windows image file caches
 Thumbs.db
@@ -49,6 +52,3 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
-
-# Cascade files
-.xml

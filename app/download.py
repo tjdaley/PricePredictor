@@ -1,6 +1,16 @@
 """
 download.py - Download stock price data
 
+invoke like this:
+
+LINUX:
+
+$ export ALPHAVANTAGE_KEY=BR549 && python3 download.py
+
+WINDOWS:
+
+$ env:ALPHAVANTAGE_KEY = 'BR549'; python download.py
+
 Copyright (c) 2019 by Thomas J. Daley. All Rights Reserved.
 """
 __author__ = "Thomas J. Daley, J.D."
@@ -30,7 +40,8 @@ def get_quotes(symbols:list):
     """
     Get quotes for each symbol.
     """
-    url = APIKEYS["alphavantage"]["time_series_daily_adjusted_url"]
+    url = APIKEYS["alphavantage"]["time_series_daily_adjusted_url"] \
+          .format(apikey = APIKEYS["alphavantage"]["apikey"])
     raw_prices = RawPrices()
     progress_bar = ProgressBar(len(symbols))
     iteration_count = 0
@@ -40,7 +51,9 @@ def get_quotes(symbols:list):
         try:
             iteration_count += 1
             progress_bar.update(iteration_count, symbol)
-            my_url = url.format(symbol)
+            my_url = url.format(symbol=symbol)
+            LOGGER.debug(my_url)
+            break
             response = urllib.request.urlopen(my_url)
             csv_data = response.read()
 
