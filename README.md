@@ -122,6 +122,6 @@ usage: python3 train.py [-h] [--bsize BSIZE] [--days DAYS] [--dropout DROPOUT]
 
 1. Add a --random-sample flag to be used in combination with --days. For now, when --days is specififed, the top N days are used. The idea of --random-sample would be for N days to be randomly selected.
 
-# preduct.py
+# predict.py
 
 _Coming Soon_
