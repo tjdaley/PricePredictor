@@ -4,6 +4,13 @@ data/
 *.log
 data.zip
 key.txt
+download.sh
+.vscode/
+nulls.csv
+test.csv
+zeros.csv
+app/*.log
+app/.~lock.nulls.csv#
 
 # Windows image file caches
 Thumbs.db

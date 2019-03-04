@@ -7,6 +7,6 @@ APIKEYS = {
         "doc_url": "https://www.alphavantage.co/documentation/",
         "email": "nottrcp@powerdaley.com",
         "time_series_daily_adjusted_url": \
-            "http://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&outputsize=full&symbol={symbol}&apikey={apikey}&datatype=csv"
+            "http://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&xoutputsize=full&symbol={symbol}&apikey={apikey}&datatype=csv"
     }
 }

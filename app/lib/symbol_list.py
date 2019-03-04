@@ -43,7 +43,6 @@ class SymbolLister(object):
             with open(self.symbol_file, "r") as in_file:
                 symbol_data = json.loads(in_file.read())
             symbols = [symbol["Symbol"] for symbol in symbol_data]
-            print("Loaded symbols from local file:", self.symbol_file)
         except Exception as e:
             print(e)
             print("No symbol data loaded.")
