@@ -67,18 +67,12 @@ usage: python3 enrich.py [-h] [--symbol-count SYMBOL_COUNT] [--symbol SYMBOL]
 | argument | description |
 |----------|-------------|
 | **-h, --help** | Prints a help message and exits. |
-| **--day-count N** | If specified, only the first N rows of price data will be enriched. If omitted, the entire price history
-file is enriched, which is what you want when you are about to train the model. If the model is already trained and you're just
-adding data to the enriched file for predictions, then specify a value for N that is equal to the number of newly added days picked
-up from the download process PLUS the number of pivot-days. So if you downloaded on day of price data per symbol and appended that
-data to the raw price files and assuming a pivot-days value of 6, you would specify 7 as the value of N. It is OK to specify a larger
-value for N than you actually need (other than it will slow the processing), but you'll wreck yourself if you specify a number that is too small. |
+| **--day-count N** | If specified, only the first N rows of price data will be enriched. If omitted, the entire price history file is enriched, which is what you want when you are about to train the model. If the model is already trained and you're just adding data to the enriched file for predictions, then specify a value for N that is equal to the number of newly added days picked up from the download process PLUS the number of pivot-days. So if you downloaded on day of price data per symbol and appended that data to the raw price files and assuming a pivot-days value of 6, you would specify 7 as the value of N. It is OK to specify a larger value for N than you actually need (other than it will slow the processing), but you'll wreck yourself if you specify a number that is too small. |
 | **--pivot-days N** | Specifies the number of days of data that will be pivoted into a single row of data. Default is 6. |
-| **--retry** | If specified, will wait forever for a missing symbol file. Only use this flag if you are running the download.py program from a different terminal session at the same time. In that case, as data are downloaded, it will be enriched. The download
-process is slower than the enrichment process so this keeps the two in sync. |
+| **--retry** | If specified, will wait forever for a missing symbol file. Only use this flag if you are running the download.py program from a different terminal session at the same time. In that case, as data are downloaded, it will be enriched. The download process is slower than the enrichment process so this keeps the two in sync. |
 | **--status** | If specified, a simple progress bar will be displayed on the terminal screen. |
 | **--symbol X** | If specified, price data only for the symbol *X* will be enriched. |
-| **--symbol-count N** | If specified, limits the number of stock symbols to N. Normally you wouldn't specify this parameter unless you were testing. |
+| **--symbol-count N** | If specified, limits the number of stock symbols to N. Normally you wouldn't specify this parameter unless syou were testing. |
 
 # train.py
 
@@ -98,6 +92,7 @@ usage: python3 train.py [-h] [--bsize BSIZE] [--days DAYS] [--dropout DROPOUT]
 ### Training Hyperparameters
 
 | argument | description |
+|----------|-------------|
 | **--bsize N** | Sets the training batch size. Default is 5. |
 | **--dropout N** | Sets the dropout rate to N. Default is 0.3. Using a value greater than zero helps prevent the model from overfitting the training data. |
 | **--epochs N** | Number of training epochs per split of the training data. Default is 200. |
