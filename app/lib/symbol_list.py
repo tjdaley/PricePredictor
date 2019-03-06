@@ -28,7 +28,7 @@ class SymbolLister(object):
         """
         Class initializer.
         """
-        self.symbol_file = "./resources/new_symbols.json"
+        self.symbol_file = "./resources/symbols.json"
         self.url = "https://datahub.io/core/s-and-p-500-companies/r/constituents.json"
         self.symbol_limit = symbol_limit # max number of symbols to process
 
