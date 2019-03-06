@@ -80,6 +80,17 @@ _Train the neural network using enriched stock price data._
 
 This program loads enriched stock price data, trains a neural network, and saves the trained model to disk to used for preductions.
 
+By default, _train.py_ will open each enriched symbol data file and combine them into a single dataframe. On my system, the multiple malloc() calls that result from this very often result in a coredump. There are two ways to deal with this. First, you can use the `--days` parameter and load fewer days of data, say 500 (about 2 years per symbol). That may also result in a coredump but my experience is that if I take a few runs at it, it eventually works.
+
+The other thing you can do is combine all the enriched data into a single file for training purposes. There is a script just for that purpose in the app folder: `combine.sh`. When you run this script, it will combine all the enriched data files into a single file that is named such that it looks like it pertains to symbol XYZ, which is a dummy symbol. After you do that, just run _train.py_ with the `--symbol` option specifying XYZ as the symbol, and all the data will be loaded, most likely without any coredump problems.
+
+Example:
+
+```
+./combine.sh
+python3 train.py --status --symbol XYZ
+```
+
 ## Command Line Options
 
 ```
