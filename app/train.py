@@ -81,12 +81,13 @@ class Trainer(object):
         # Load data for all symbols into a single dataframe.
         # The data have already been converted to percentages, more or less, so they are
         # all of the same scale. (Rf enrich.py)
+        self.logger.debug("Beginning to load data for %s symbols.", len(symbols))
         sym_count = 0
         for symbol in symbols:
             sym_count += 1
 
             if self.options.status:
-                progress_bar.update(sym_count, suffix=symbol)
+                progress_bar.update(sym_count, suffix=symbol.ljust(5, ' '))
 
             file_name = RawPrices.enriched_price_file_name(symbol)
             try:
@@ -101,36 +102,30 @@ class Trainer(object):
             except FileNotFoundError as e:
                 self.logger.error("Failed to load %s: %s",symbol, e)
 
+        self.logger.debug("Data load complete.")
+        return dataframe
+
+    def prepare_dataset(self, dataframe):
         # Let's see if we have some NaN values.
+        self.logger.debug("Testing for null values.")
         df_test = dataframe[dataframe.isnull().any(axis=1)]
         if not df_test.empty:
             self.logger.warn("We have some null values and cannot continue. Check 'nulls.csv'.")
             df_test.to_csv("nulls.csv")
             return None, None
 
-        # Rearrange columns so that timestamp is the first column
-        # and symbol and label are the last two columns.
-        col_names = dataframe.columns
-        ordered_col_names = ["timestamp1"]
-        for col_name in col_names:
-            cupper = col_name.upper()
-            if "VOLUME" not in cupper and "UNNAMED" not in cupper and col_name not in ["timestamp1", "symbol", "label"]:
-                ordered_col_names.append(col_name)
-        ordered_col_names.append("label")
-        ordered_col_names.append("symbol")
-        dataframe = dataframe[ordered_col_names]
-        self.logger.debug(dataframe.head())
-
         # Continue with good data
         dataset = dataframe.values
         cols = dataframe.shape[1]
 
         # Dependent data (category) is in the second to last column.
+        self.logger.debug("Extracting category labels.")
         Y = dataset[:,cols-2:cols-1]
         Y = np.ravel(Y)
 
         # Independent data (features). Skip first two columns (index and date) and last two
         # columns (category and symbol).
+        self.logger.debug("Extracting and scaling feature values.")
         X = dataset[:,3:cols-2].astype(float)
         scaler = MinMaxScaler()
 
@@ -166,10 +161,12 @@ class Trainer(object):
         Returns:
             (tf.keras.models.Sequential): Trained model
         """
+        self.logger.debug("Model training starting.")
         model = baseline_model()
         model.fit(X, Y, epochs=self.options.epochs, batch_size=self.options.bsize, verbose=self.options.verbose)
         scores = model.evaluate(X, Y, verbose=0)
         self.logger.info("%s: %.2f%%", model.metrics_names[1], scores[1]*100)
+        self.logger.debug("Model training complete.")
         return model
 
     def save(self, model)-> bool:
@@ -306,7 +303,8 @@ def main():
     args = get_options()
 
     trainer = Trainer(args)
-    X, Y = trainer.load_dataset()
+    df = trainer.load_dataset()
+    X, Y = trainer.prepare_dataset(df)
 
     if X is None or Y is None:
         trainer.logger.info("Exiting . . .")
