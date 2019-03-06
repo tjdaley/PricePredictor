@@ -73,7 +73,7 @@ def get_quotes(symbols:list, args):
             iteration_count += 1
 
             if args.status:
-                progress_bar.update(iteration_count, symbol)
+                progress_bar.update(iteration_count, symbol.ljust(5, ' '))
 
             my_url = url.format(apikey=apikey, symbol=symbol)
             response = urllib.request.urlopen(my_url)

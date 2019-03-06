@@ -1,0 +1,23 @@
+[
+{"Name":"Wabtec Corporation","Symbol":"WAB","Sector":"Industrials","Subindustry":"Construction Machinery & Heavy Trucks"},
+{"Name":"Atmos Energy Corp","Symbol":"ATO","Sector":"Utilities","Subindustry":"Gas Utilities"},
+{"Name":"Teleflex Inc","Symbol":"TFX","Sector":"Health Care","Subindustry":"Health Care Equipment"},
+{"Name":"First Republic Bank","Symbol":"FRC","Sector":"Financials","Subindustry":"Regional Banks"},
+{"Name":"Celanese Corp.","Symbol":"CE","Sector":"Materials","Subindustry":"Specialty Chemicals"},
+{"Name":"Maxim Integrated Products Inc","Symbol":"MXIM","Sector":"Information Technology","Subindustry":"Semiconductors"},
+{"Name":"Lamb Weston Holdings Inc","Symbol":"LW","Sector":"Consumer Staples","Subindustry":"Packaged Foods & Meats"},
+{"Name":"Diamondback Energy","Symbol":"FANG","Sector":"Energy","Subindustry":"Oil & Gas Exploration & Production"},
+{"Name":"Jack Henry & Associates Inc","Symbol":"JKHY","Sector":"Information Technology","Subindustry":"Data Processing & Outsourced Services"},
+{"Name":"Keysight Technologies","Symbol":"KEYS","Sector":"Information Technology","Subindustry":"Electronic Equipment & Instruments"},
+{"Name":"Fortinet","Symbol":"FTNT","Sector":"Information Technology","Subindustry":"Systems Software"},
+{"Name":"Rollins Inc.","Symbol":"ROL","Sector":"Industrials","Subindustry":"Environmental & Facilities Services"},
+{"Name":"Arista Networks","Symbol":"ANET","Sector":"Information Technology","Subindustry":"Communications Equipment"},
+{"Name":"Copart Inc","Symbol":"CPRT","Sector":"Industrials","Subindustry":"Diversified Support Services"},
+{"Name":"FleetCor Technologies Inc","Symbol":"FLT","Sector":"Information Technology","Subindustry":"Data Processing & Outsources Services"},
+{"Name":"HollyFrontier Corp","Symbol":"HFC","Sector":"Energy","Subindustry":"Oil & Gas Refining & Marketing"},
+{"Name":"Broadridge Financial Solutions","Symbol":"BR","Sector":"Information Technology","Subindustry":"Data Processing & Outsourced Services"},
+{"Name":"Twitter, Inc.","Symbol":"TWTR","Sector":"Communication Services","Subindustry":"Interactive Media & Services"},
+{"Name":"Evergy","Symbol":"EVRG","Sector":"Utilities","Subindustry":"Electric Utilities"},
+{"Name":"ABIOMED Inc","Symbol":"ABMD","Sector":"Health Care","Subindustry":"Health Care Equipment"},
+{"Name":"MSCI Inc","Symbol":"MSCI","Sector":"Financials","Subindustry":"Financial Exchanges & Data"}
+]

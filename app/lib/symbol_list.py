@@ -1,10 +1,16 @@
 """
 symbol_list.py - Load the list of symbols we are going to process.
 
+NOTE: This class used to periodically retrieve a list of symbols from datahub.io.
+      Now, I find that the data are out of date. For the time being, I have
+      created a symbols.json file that we'll just use until I have time to scrape
+      the wikipedia page, which seems to be the best list. 
+      https://en.wikipedia.org/wiki/List_of_S%26P_500_companies#S&P_500_Component_Stocks
+
 Copyright (c) 2019 by Thomas J. Daley. All Rights Reserved.
 """
 __author__ = "Thomas J. Daley, J.D."
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 
 import json
 import os
@@ -12,7 +18,7 @@ import time
 import urllib
 
 # We'll use cached data that is less than this number of seconds old.
-MAX_CACHE_AGE = 3*24*60*60
+MAX_CACHE_AGE = 3*24*60*60 * 0 # ZERO means it never times out.
 
 class SymbolLister(object):
     """
@@ -22,7 +28,7 @@ class SymbolLister(object):
         """
         Class initializer.
         """
-        self.symbol_file = "../data/symbols.json"
+        self.symbol_file = "./resources/new_symbols.json"
         self.url = "https://datahub.io/core/s-and-p-500-companies/r/constituents.json"
         self.symbol_limit = symbol_limit # max number of symbols to process
 
@@ -61,7 +67,7 @@ class SymbolLister(object):
         try:
             file_time = os.stat(self.symbol_file).st_mtime
             file_age = time.time() - file_time
-            if file_age < MAX_CACHE_AGE:
+            if file_age < MAX_CACHE_AGE or MAX_CACHE_AGE == 0:
                 print("Using cached symbol data.")
                 symbols = self.__load_symbol_data()
         except Exception as e:
@@ -71,7 +77,8 @@ class SymbolLister(object):
         # If cache is too old, then load from the network (unless we can't then use the ancient cached data).
         if not symbols:
             try:
-                response = urllib.request.urlopen(self.url)
+                data = urllib.parse.urlencode({"session": "600-6-ddbdabfedbf"}).encode()
+                response = urllib.request.urlopen(self.url, data=data)
                 symbol_data = json.loads(response.read())
                 self.__save_symbol_data(symbol_data)
                 symbols = [symbol["Symbol"] for symbol in symbol_data]
