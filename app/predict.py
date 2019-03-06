@@ -11,44 +11,135 @@ import sys
 import numpy as np
 import pandas as pd
 
+from sklearn.preprocessing import MinMaxScaler
+
+from train import Trainer
+
 from lib.logger import Logger
 from lib.progress_bar import ProgressBar
 from lib.symbol_list import SymbolLister
 from lib.raw_prices import RawPrices
 
+class Predictor(object):
+    """
+    Encapsulates our prediction logic.
+    """
+    def __init__(self, options, model):
+        """
+        Class initializer.
+
+        Args:
+            options (args): Command line arguments.
+            model (tf.keras.models.Sequential): Restored model to used for making predictions
+        """
+        self.options = options
+        self.model = model
+        self.logger = Logger.get_logger("prxpred.predict")
+
+    def load_dataset(self):
+        """
+        Load dataset to base predictions from.
+        """
+
+        # If we were given a symbol, then predictg that one symbol.
+        # Otherwise, get the full list of symbols to process.
+        if self.options.symbol:
+            symbols = [self.options.symbol]
+        else:
+            symbol_lister = SymbolLister(self.options.symbol_count)
+            symbols = symbol_lister.get_symbols()
+
+        # Prepare our progress bar, if any.
+        if self.options.status:
+            progress_bar = ProgressBar(len(symbols))
+
+        # Iterate through the symbol list to create a dataset of symbols to make predictions for.
+        symbol_count = 0
+        dataframe = pd.DataFrame()
+
+        for symbol in symbols:
+            # Update progress bar, if any
+            if self.options.status:
+                symbol_count += 1
+                progress_bar.update(symbol_count, suffix=symbol.ljust(5, ' '))
+
+            # Load symbol data for this symbol
+            file_name = RawPrices.enriched_price_file_name(symbol)
+            try:
+                tmp_df = pd.read_csv(file_name, index_col=0, parse_dates=["timestamp1"])
+
+                if self.options.trade_date:
+                    start_date = self.options.trade_date
+                    end_date = start_date # for now.
+                    mask = (tmp_df['timestamp1'] >= start_date) & (tmp_df['timestamp1'] <= end_date)
+                    tmp_df = tmp_df.loc[mask]
+                else:
+                    tmp_df = tmp_df.head(1)
+
+                dataframe = dataframe.append(tmp_df, sort=False)
+            except FutureWarning as e:
+                self.logger.error("Warning while processing %s: %s", symbol, e)
+                self.logger.exception(e)
+            except FileNotFoundError as e:
+                self.logger.error("Failed to load %s: %s",symbol, e)
+
+        # Get the MAX of the timestamp field and warn about dates that are older than the max.
+        # They probably indicate a failed download OR a bad symbol (such BF.B).
+        dataframe.to_csv("predict_input.csv")
+        dataframe.reset_index()
+        max_date = dataframe.max()["timestamp1"]
+        mask = (dataframe['timestamp1'] < max_date)
+        df_old = dataframe.loc[mask]
+        old_count = df_old.shape[0]
+        if old_count > 0:
+            self.logger.warn("Found %s symbols with price data older than %s.", old_count, max_date)
+            self.logger.warn(df_old["symbol"])
+        return dataframe[dataframe.timestamp1 == max_date]
+
+    def scale_data(self, dataframe):
+        """
+        Scale the data.
+        TODO: Should we be doing this in enrich.py?
+        """
+        dataset = dataframe.values
+        cols = dataframe.shape[1]
+
+        # Independent data (features). Skip first two columns (index and date) and last two
+        # columns (category and symbol).
+        X = dataset[:,3:cols-2].astype(float)
+        scaler = MinMaxScaler()
+
+        try:
+            scaled_X = scaler.fit_transform(X)
+        except ValueError as e:
+            scaled_X = None
+            self.logger.warn("Error scaling the X axis: %s", e)
+
+        return scaled_X
+
+    def predict(self, dataframe, scaled_X):
+        """
+        Make predictions.
+        """
+        predictions = self.model.predict_on_batch(scaled_X)
+        return predictions
+
+
 def get_options()->dict:
     """
     Get command line options.
     """
-    batch_size_default = 5
-    epochs_default = 200
-    splits_default = 10
-
     parser = argparse.ArgumentParser(description="Predict tomorrow's stock prices")
-    parser.add_argument("--estimate", action="store_true", help="If specified, will 'quickly' estimate the models accuracy but will not actually train it or save it.")
-    parser.add_argument("--seed", action="store", default=7, type=int, help="Random number seed. Default is 7.")
-    parser.add_argument("--days", action="store", default=0, type=int, help="Number of days of data for each symbol. Omit to process all days.")
-    parser.add_argument("--splits", action="store", default=splits_default, type=int,
-                        help="Number of splits for the training data. Must be at least 2. Default is {}.".format(splits_default))
-    parser.add_argument("--epochs", action="store", default=epochs_default, type=int,
-                        help="Number of training epochs per split. Default is {}".format(epochs_default))
-    parser.add_argument("--bsize", action="store", default=batch_size_default, type=int,
-                        help="Batch size. Default is {}".format(batch_size_default))
-    parser.add_argument("--dropout", action="store", default=0.3, type=float,
-                        help="Dropout rate, which helps the model from over-fitting. Default=0.3.")
-    parser.add_argument("--verbose", action="store_true", default=False,
-                        help="If specified, will produce verbose output.")
+    parser.add_argument("--model-name", action="store", default="prxpred",
+                        help="Specifies the name of the model. Used in serializing/deserializing the model.")
+    parser.add_argument("--trade-date", action="store",
+                        help="Specify a trade date in YYY-MM-DD form to predict rows having that specific date.")
     parser.add_argument("--status", action="store_true", default=False,
                         help="If specified, will show a status bar as the data sets are loaded.")
     parser.add_argument("--symbol", action="store", default=None, type=str, help="Symbol to process. Omit to process all enriched data.")
+    parser.add_argument("--symbol-count", action="store", default=0, type=int,
+                        help="Number of symbols to process. Default is to process all of them.")
     args = parser.parse_args()
-
-    if args.splits < 2:
-        print("--splits must be at least 2, but you specified {}. I am using {}.".format(args.splits, splits_default))
-        args.splits = 10
-
-    if args.verbose:
-        args.verbose = 1
 
     return args
 
@@ -57,47 +148,33 @@ def main():
     Main processing logic.
     """
 
-    # These globals are used by baseline_model()
-    global X_DIM
-    global CATEGORY_COUNT
-    global DROPOUT_RATE
-
     args = get_options()
-
     trainer = Trainer(args)
-    X, Y = trainer.load_dataset()
+    model = trainer.restore()
 
-    if X is None or Y is None:
+    if not model:
         trainer.logger.info("Exiting . . .")
         exit(3)
 
-    encoded_Y = trainer.encode_category_labels(Y)
+    predictor = Predictor(args, model)
+    df = predictor.load_dataset()
+    predictor.logger.debug(df.head(1))
+    X, Y = trainer.prepare_dataset(df)
+    predictions = predictor.predict(df, X)
 
-    X_DIM = len(X[1])
-    CATEGORY_COUNT = len(encoded_Y[0])
-    DROPOUT_RATE = args.dropout
+    index = 0
+    labels = sorted(["UP", "DOWN", "UNKNOWN"]) #sorted(["STRONG_UP", "STRONG_DOWN", "WEAK_UP", "WEAK_DOWN", "UNKNOWN"])
+    correct = 0
+    for prediction in predictions:
+        symbol = df.iloc[index]["symbol"]
+        truth = df.iloc[index]["label"]
+        prediction_index = np.argmax(prediction)
+        predictor.logger.debug("%-5s Truth=%-5s Pred=%-5s (%6.3f)", symbol, truth, labels[prediction_index], prediction[prediction_index]*100)
+        if truth == labels[prediction_index]:
+            correct += 1
+        index +=1
 
-    trainer.logger.debug("Features: %s Categories: %s", X_DIM, CATEGORY_COUNT)
-
-    # Estimate how well our model will work when user includes --estimate on the command line.
-    if args.estimate:
-        try:
-            estimator = KerasClassifier(build_fn=baseline_model, epochs=args.epochs, batch_size=args.bsize, verbose=args.verbose)
-            kfold = KFold(n_splits=args.splits, shuffle=True, random_state=args.seed)
-            results = cross_val_score(estimator, X, encoded_Y, cv=kfold)
-            trainer.logger.info("Baseline: %.2f%% (%.2f%%)", results.mean()*100, results.std()*100)
-        except KeyboardInterrupt:
-            sys.exit(2)
-        exit(0)
-
-    # Train and save the model
-    model = trainer.train(X, encoded_Y)
-    trainer.save(model)
-
-    # Restore and test the saved model
-    model = trainer.restore()
-    score = model.evaluate(X, encoded_Y, verbose=0)
-    trainer.logger.info("%s: %.2f%%", model.metrics_names[1], score[1]*100)
+    predictor.logger.debug("Correct: %s / %s = %6.3f%%", correct, index, correct/index*100)
 
 if __name__ == "__main__":
     main()
