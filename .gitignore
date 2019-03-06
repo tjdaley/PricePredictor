@@ -11,6 +11,7 @@ test.csv
 zeros.csv
 app/*.log
 app/.~lock.nulls.csv#
+app/predict_input.csv
 
 # Windows image file caches
 Thumbs.db
