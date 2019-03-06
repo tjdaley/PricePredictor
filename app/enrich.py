@@ -67,7 +67,6 @@ def remove_zeros(symbol, df, dfz, logger):
         return df, dfz
 
     # Fix zero volumes by averaging adjacent days.
-    
     logger.warn("%s Will fix %s zero-volume records.", symbol, df_zero_vol.shape[0])
     for row in df_zero_vol.itertuples():
         divisor = 2
@@ -84,7 +83,7 @@ def remove_zeros(symbol, df, dfz, logger):
             divisor -= 1
         
         if divisor == 0:
-            break # we can't fix this.
+            break # we can't fix this without attempting a deeper look. Later.
 
         new_volume = int((vol_above + vol_below) / divisor)
         df.loc[row.Index, "volume"] = new_volume
@@ -103,6 +102,21 @@ def remove_zeros(symbol, df, dfz, logger):
 
     logger.warn("%s Removed %s rows with ZERO values.", symbol, zero_price_count)
     return df, dfz
+
+def label(row)-> str:
+    """
+    Assign a label based on values in this row.
+    """
+    if row["next_open"] > row["close1"] and row["next_close"] > row["next_open"]:
+        return "UP" #STRONG_UP"
+    elif row["next_close"] > row["next_open"]:
+        return "UP" #WEAK_UP"
+    elif row["next_open"] < row["close1"] and row["next_close"] < row["next_open"]:
+        return "DOWN" #"STRONG_DOWN"
+    elif row["next_close"] < row["next_open"]:
+        return "DOWN" #"WEAK_DOWN"
+
+    return "UNKNOWN"
 
 if __name__ == "__main__":
     logger = Logger.get_logger("prxpred.enrich")
@@ -156,6 +170,21 @@ if __name__ == "__main__":
                 new_df = pd.concat([df.add_suffix(1)] +
                         [df[x+1:].reset_index(drop=True).add_suffix(x+2)
                         for x in range(n)], axis=1)
+
+                # Insert tomorrow's opening and closing prices
+                #new_df["today_close"] = new_df["close1"]
+                new_df["next_open"] = new_df["open1"].shift(1)
+                new_df["next_close"] = new_df["close1"].shift(1)
+                new_df["next_timestamp"] = new_df["timestamp1"].shift(1)
+
+                # Label the data
+                new_df["label"] = new_df.apply(lambda row: label(row), axis=1)
+
+                # Drop these working columns later
+                # If you train the model with the next_* columns left in the data, the training will be close to 100%
+                # but have zero predictive value because you will have given the model a cheat sheet that does not exist
+                # when we are in prediction mode. Don't mess this up.
+                drop_cols = ["next_open", "next_close", "next_timestamp"]
 
                 # Insert the trend data.
                 for day in range(1, n+1):
@@ -224,11 +253,10 @@ if __name__ == "__main__":
                 # TODO: To generate stronger signals, consider making the FLAT range a little broader than
                 #       absolute zero, i.e. days that are only very slightly up or down, treat them as FLAT
                 #       and see if the UP/DOWN signals are stronger as a result.
-                new_df["label"] = np.where(new_df["open1"].gt(new_df["close2"]), "UP",
-                                            np.where(new_df["open1"].lt(new_df["close2"]), "DOWN", "FLAT"))
+                #new_df["label"] = np.where(new_df["open1"].gt(new_df["close2"]), "UP",
+                #                            np.where(new_df["open1"].lt(new_df["close2"]), "DOWN", "FLAT"))
 
-                # Remove columns we don't need.
-                drop_cols = []
+                # Add to the list of columns we don't need.
                 for day in range(1, n+2):
                     # Some shortcut indices - Just makes the code a little easier to read
                     drop_cols.append("open{}".format(day))
@@ -239,10 +267,12 @@ if __name__ == "__main__":
                     if day > 1:
                         drop_cols.append("timestamp{}".format(day)) # We'll keep the first timestamp column.
 
-                # Drop all the unnamed columns
+                # Drop all the unnamed columns and volumn columns. (Keep the vol_pct_mean columns)
                 col_names = new_df.columns
                 for col_name in col_names:
                     if "UNNAMED" in col_name.upper():
+                        drop_cols.append(col_name)
+                    if "VOLUME" in col_name.upper():
                         drop_cols.append(col_name)
 
                 chart_cols = ["timestamp1", "open1", "high1", "low1", "close1"]
@@ -264,6 +294,21 @@ if __name__ == "__main__":
                 df["symbol"] = symbol
                 chart_df["symbol"] = symbol
 
+                # Rearrange the columns so that they are in the order expected by the
+                # training and prediction processes.
+                # Rearrange columns so that timestamp is the first column
+                # and symbol and label are the last two columns.
+                col_names = df.columns
+                ordered_col_names = ["timestamp1"]
+                for col_name in col_names:
+                    cupper = col_name.upper()
+                    if "VOLUME" not in cupper and "UNNAMED" not in cupper and col_name not in ["timestamp1", "symbol", "label"]:
+                        ordered_col_names.append(col_name)
+                ordered_col_names.append("label")
+                ordered_col_names.append("symbol")
+                df = df[ordered_col_names]
+                #---------------------------
+
                 # Save enriched dataframe to a CSV file
                 df.to_csv(RawPrices.enriched_price_file_name(symbol))
                 chart_df.to_csv(RawPrices.chart_file_name(symbol))
@@ -276,6 +321,7 @@ if __name__ == "__main__":
             except ValueError as e:
                 # Probably a price file that has only error messages in it.
                 logger.error("Error processing %s in %s: %s", symbol, in_file, e)
+                logger.exception(e)
                 retry = False
             except Exception as e:
                 logger.error("Error processing %s in %s.", symbol, in_file)
