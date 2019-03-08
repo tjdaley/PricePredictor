@@ -163,7 +163,14 @@ class Trainer(object):
         """
         self.logger.debug("Model training starting.")
         model = baseline_model()
-        model.fit(X, Y, epochs=self.options.epochs, batch_size=self.options.bsize, verbose=self.options.verbose)
+        model.fit(
+            X,
+            Y,
+            batch_size=self.options.bsize,
+            epochs=self.options.epochs,
+            validation_split=self.options.validation_split,
+            verbose=self.options.verbose
+            )
         scores = model.evaluate(X, Y, verbose=0)
         self.logger.info("%s: %.2f%%", model.metrics_names[1], scores[1]*100)
         self.logger.debug("Model training complete.")
@@ -250,7 +257,7 @@ def get_options()->dict:
     """
     Get command line options.
     """
-    batch_size_default = 5
+    batch_size_default = 32
     epochs_default = 200
     splits_default = 10
 
@@ -277,8 +284,10 @@ def get_options()->dict:
                         help="If specified, will show a status bar as the data sets are loaded.")
     parser.add_argument("--symbol", action="store", default=None, type=str,
                         help="Symbol to process. Omit to process all enriched data.")
-    parser.add_argument("--verbose", action="store_true", default=False,
-                        help="If specified, will produce verbose output.")
+    parser.add_argument("--validation-split", action="store", default=0.25, type=float,
+                        help="Float beteen 0 and 1 expressing the fraction of training data reserved for validation of the model. Default is 0.25.")
+    parser.add_argument("--verbose", action="store", default=0,
+                        help="Verbosity control. 0=Silent (default) 1=Progress Bar 2=One line per epoch")
     args = parser.parse_args()
 
     if args.splits < 2:
