@@ -15,6 +15,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.layers import Dropout
 from tensorflow.keras.wrappers.scikit_learn import KerasClassifier
+from tensorflow.keras import optimizers
 from tensorflow.keras.models import model_from_json
 from tensorflow.python.keras.utils import np_utils
 from sklearn.model_selection import cross_val_score
@@ -232,6 +233,7 @@ class Trainer(object):
 X_DIM = 0
 CATEGORY_COUNT = 0
 DROPOUT_RATE = 0.3
+OPTIMIZER  = 'adam'
 def baseline_model(): #(x_dim, category_count):
     """
     Define our baseline model.
@@ -250,7 +252,7 @@ def baseline_model(): #(x_dim, category_count):
     if DROPOUT_RATE > 0:
         model.add(Dropout(DROPOUT_RATE))
     model.add(Dense(CATEGORY_COUNT, activation='softmax'))
-    model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+    model.compile(loss='categorical_crossentropy', optimizer=OPTIMIZER, metrics=['accuracy'])
     return model
 
 def get_options()->dict:
@@ -276,6 +278,8 @@ def get_options()->dict:
                         help="If specified, training data will be loaded, summarized, then the process will exit. No training will be done.")
     parser.add_argument("--model-name", action="store", default="prxpred",
                         help="Specifies the name of the model. Used in serializing/deserializing the model.")
+    parser.add_argument("--optimizer", action="store", default="adam",
+                        help="Specify which optimizer to use. adam, sgd, rmsprop, adagrad, etc. Default is 'adam'.")
     parser.add_argument("--seed", action="store", default=7, type=int,
                         help="Random number seed. Default is 7.")
     parser.add_argument("--splits", action="store", default=splits_default, type=int,
@@ -308,6 +312,7 @@ def main():
     global X_DIM
     global CATEGORY_COUNT
     global DROPOUT_RATE
+    global OPTIMIZER
 
     args = get_options()
 
@@ -324,6 +329,7 @@ def main():
     X_DIM = len(X[1])
     CATEGORY_COUNT = len(encoded_Y[0])
     DROPOUT_RATE = args.dropout
+    OPTIMIZER = args.optimizer
 
     trainer.logger.debug("Features: %s Categories: %s", X_DIM, CATEGORY_COUNT)
 
